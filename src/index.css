@@ -1,0 +1,366 @@
+@import 'tailwindcss';
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --color-paper: #FAF6EF;
+  --color-paper-raised: #FFFDFA;
+  --color-ink: #1C1A2E;
+  --color-ink-soft: #4B4860;
+  --color-saffron: #E8792E;
+  --color-saffron-soft: #FBE4D0;
+  --color-teal: #2F6F5E;
+  --color-teal-soft: #DCEBE6;
+  --color-coral: #C4432E;
+  --color-coral-soft: #F7DDD6;
+  --color-line: #E4DCCB;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-card: 0 1px 2px rgba(28, 26, 46, 0.04), 0 10px 30px -18px rgba(28, 26, 46, 0.3);
+  --shadow-lift: 0 26px 50px -26px rgba(28, 26, 46, 0.45);
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-saffron-soft);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- motion primitives ---------- */
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Staggered entrance. Set --i on the element to order it within a group. */
+.rise {
+  animation: rise 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--i, 0) * 70ms);
+}
+
+.fade-in {
+  animation: fade-in 0.4s ease-out both;
+}
+
+/* Whole-screen transition, re-keyed on screen change in App. */
+.screen-enter {
+  animation: rise 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Scroll-triggered reveal; .is-visible is added by an IntersectionObserver. */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--i, 0) * 60ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.lift {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.lift:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+}
+
+.press:active {
+  transform: translateY(1px);
+}
+
+/* ---------- landing atmosphere ---------- */
+
+@keyframes glow-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(4%, -6%) scale(1.12); }
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.5;
+  pointer-events: none;
+  animation: glow-drift 18s ease-in-out infinite;
+}
+
+@keyframes confusion-drift {
+  0%, 100% { transform: translate(0, 0) rotate(var(--rest-r, 0deg)); }
+  33% { transform: translate(var(--dx1, 10px), var(--dy1, -8px)) rotate(var(--r1, -4deg)); }
+  66% { transform: translate(var(--dx2, -8px), var(--dy2, 10px)) rotate(var(--r2, 4deg)); }
+}
+
+.confusion-bubble {
+  animation: confusion-drift var(--duration, 14s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+/* Arrow nudge on the landing choice cards. */
+.choice-card .choice-arrow {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.choice-card:hover .choice-arrow {
+  transform: translateX(5px);
+}
+
+/* ---------- loading ---------- */
+
+@keyframes draw-path {
+  0% { stroke-dashoffset: 320; }
+  55% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -320; }
+}
+
+.route-line {
+  stroke-dasharray: 320;
+  animation: draw-path 2.6s ease-in-out infinite;
+}
+
+@keyframes pin-pop {
+  0%, 100% { transform: scale(1); opacity: 0.35; }
+  50% { transform: scale(1.25); opacity: 1; }
+}
+
+.route-pin {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: pin-pop 2.6s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * 400ms);
+}
+
+/* ---------- roadmap timeline ---------- */
+
+.trail-connector {
+  position: relative;
+  width: 1.5px;
+  background-image: radial-gradient(circle, var(--color-line) 1.5px, transparent 1.5px);
+  background-size: 1.5px 10px;
+  background-repeat: repeat-y;
+}
+
+/* Solid accent that draws down the dotted trail as each step scrolls into view. */
+.trail-fill {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 0;
+  background: var(--accent);
+  opacity: 0.55;
+  transition: height 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: 0.1s;
+}
+
+.roadmap-step.is-visible .trail-fill {
+  height: 100%;
+}
+
+.roadmap-node {
+  background: var(--accent);
+  color: var(--color-paper);
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.roadmap-step .roadmap-node {
+  transform: scale(0.7);
+}
+
+.roadmap-step.is-visible .roadmap-node {
+  transform: scale(1);
+}
+
+.roadmap-step:hover .roadmap-node {
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 16%, transparent);
+}
+
+.roadmap-rule {
+  background: var(--accent);
+}
+
+.roadmap-chip {
+  background: color-mix(in srgb, var(--accent) 12%, var(--color-paper));
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .confusion-bubble,
+  .hero-glow,
+  .rise,
+  .fade-in,
+  .screen-enter,
+  .route-line,
+  .route-pin {
+    animation: none !important;
+  }
+
+  .reveal,
+  .lift,
+  .trail-fill,
+  .roadmap-node,
+  .choice-card .choice-arrow {
+    transition: none !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .roadmap-step .roadmap-node {
+    transform: none;
+  }
+
+  .trail-fill {
+    height: 100%;
+  }
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #fff;
+  }
+
+  /* Backgrounds carry meaning here — the numbered nodes, the dotted trail and the
+     pitfall callout are all background-painted, so they must survive the print pass. */
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Scoped to the app chrome — the roadmap's own <header> holds the title. */
+  .app-header,
+  .app-footer,
+  .no-print {
+    display: none !important;
+  }
+
+  .app-shell {
+    min-height: 0 !important;
+  }
+
+  .roadmap-sheet {
+    max-width: none;
+    padding: 0 !important;
+  }
+
+  .roadmap-step {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1,
+  h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Anything gated on scroll or entrance animation must be forced visible, or a long
+     roadmap prints half-blank. */
+  .rise,
+  .fade-in,
+  .screen-enter,
+  .reveal {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Chrome drops background fills when "Background graphics" is off, which would leave
+     the paper-white step numbers invisible and erase the dotted trail. Borders and text
+     always print, so the timeline is redrawn with those instead of relying on fills. */
+  .roadmap-node {
+    background: transparent !important;
+    color: var(--color-ink) !important;
+    border: 1.5px solid var(--color-ink);
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .trail-connector {
+    width: 0 !important;
+    background-image: none !important;
+    border-left: 1.5px dotted var(--color-ink-soft);
+  }
+
+  .trail-fill {
+    display: none !important;
+  }
+
+  .roadmap-callout {
+    border-color: var(--color-coral) !important;
+  }
+
+  /* The comparison grid scrolls sideways on screen; on paper it has to collapse to fit the
+     page instead, with the sticky label column pinned back into normal flow. */
+  .compare-sheet {
+    max-width: none;
+    padding: 0 !important;
+  }
+
+  .compare-scroll {
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .compare-grid {
+    min-width: 0 !important;
+  }
+
+  .compare-grid > div {
+    grid-template-columns: 7rem repeat(var(--n, 3), minmax(0, 1fr)) !important;
+  }
+
+  .compare-row {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .compare-label,
+  .compare-corner {
+    position: static !important;
+    background: transparent !important;
+  }
+
+  .compare-grid,
+  .compare-grid * {
+    font-size: 0.72rem !important;
+    line-height: 1.45 !important;
+  }
+}

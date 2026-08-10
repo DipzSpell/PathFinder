@@ -1,0 +1,2386 @@
+{
+  "generatedAt": "2026-08-10T07:03:01.517Z",
+  "model": "gemini-flash-lite-latest",
+  "entries": {
+    "rev:doctor": {
+      "title": "Roadmap to Becoming a Doctor in India",
+      "summary": "A comprehensive guide for students entering Class 11 to pursue a career in medicine through the NEET-UG and MBBS pathway.",
+      "steps": [
+        {
+          "stage": "Class 11-12 (Science Stream)",
+          "title": "Choose Physics, Chemistry, and Biology (PCB)",
+          "detail": "Enroll in the Science stream with Physics, Chemistry, and Biology as core subjects. Maintain a minimum of 50% aggregate marks in PCB to remain eligible for medical entrance exams.",
+          "requirement": "Class 10 Board completion with strong foundation in science and mathematics."
+        },
+        {
+          "stage": "Class 12 / Drop Year",
+          "title": "Clear the NEET-UG Entrance Exam",
+          "detail": "Prepare thoroughly for the National Eligibility cum Entrance Test (NEET-UG), which is mandatory for admission to all medical colleges in India. A high percentile is required to secure a seat in government medical colleges.",
+          "requirement": "Minimum age of 17 years by December 31 of the year of admission."
+        },
+        {
+          "stage": "Years 1 to 4.5",
+          "title": "Complete the MBBS Degree",
+          "detail": "Pursue the Bachelor of Medicine and Bachelor of Surgery (MBBS) degree from a recognized medical college. The course spans 4.5 years divided into pre-clinical, para-clinical, and clinical phases with regular university exams.",
+          "requirement": "Successful qualification in NEET-UG and counseling allotment."
+        },
+        {
+          "stage": "Year 5",
+          "title": "Compulsory Rotatory Medical Internship (CRMI)",
+          "detail": "Complete a mandatory 1-year rotatory internship in various hospital departments to gain hands-on clinical experience and obtain permanent registration with the National Medical Commission (NMC) or State Medical Council.",
+          "requirement": "Successful completion of all MBBS professional exams."
+        },
+        {
+          "stage": "Post-Internship",
+          "title": "Licensure and Practice as a General Practitioner",
+          "detail": "Register with the medical council to legally practice as a general physician. Alternatively, you can prepare for the National Exit Test (NExT) for licensure and PG admissions.",
+          "requirement": "Completion of MBBS and internship."
+        },
+        {
+          "stage": "Postgraduate Specialization (Optional)",
+          "title": "Clear NEET-PG for MD/MS",
+          "detail": "If you wish to specialize in a specific branch like surgery, pediatrics, or internal medicine, clear the NEET-PG exam and complete a 3-year postgraduate residency program.",
+          "requirement": "Completed MBBS degree and permanent registration."
+        }
+      ],
+      "examsToWatch": [
+        "NEET-UG",
+        "NEET-PG",
+        "NExT"
+      ],
+      "commonMistake": "Neglecting NCERT textbooks in Physics and Chemistry while focusing solely on Biology and complex coaching modules for NEET preparation."
+    },
+    "rev:software engineer": {
+      "title": "Software Engineer Roadmap",
+      "summary": "Path from choosing the Science stream in Class 11 to securing a software engineering role in India via engineering degrees and technical upskilling.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Science Stream (PCM)",
+          "detail": "Opt for Physics, Chemistry, and Mathematics (PCM) with Computer Science as an elective in your higher secondary education. A strong foundation in Mathematics is critical for logical thinking and cracking engineering entrance exams.",
+          "requirement": "Minimum 60% aggregate in Class 10 board exams"
+        },
+        {
+          "stage": "Class 12 Board & Entrance Exams",
+          "title": "Appear for Engineering Entrances",
+          "detail": "Focus heavily on JEE Main and JEE Advanced alongside state-level CETs (like MHT CET, COMEDK, KCET) or private university exams (BITS-SAT, VITEEE). These exams test your Physics, Chemistry, and Math concepts at an advanced level.",
+          "requirement": "Minimum 75% in Class 12 (for NITs/IIITs/IITs)"
+        },
+        {
+          "stage": "Undergraduate Degree",
+          "title": "Pursue B.Tech / B.E. in Computer Science",
+          "detail": "Enroll in a 4-year Bachelor of Technology (B.Tech) or Bachelor of Engineering (BE) program in Computer Science and Engineering (CSE) or Information Technology (IT). Master core subjects like Data Structures, Algorithms, Operating Systems, and Database Management Systems.",
+          "requirement": "Valid score in JEE Main/Advanced or State/Private CETs"
+        },
+        {
+          "stage": "College Years (Semesters 3-8)",
+          "title": "Skill Development and DSA",
+          "detail": "Regularly practice Data Structures and Algorithms (DSA) on platforms like LeetCode and Codeforces. Build full-stack projects, contribute to open-source repositories, and host your code on GitHub to showcase practical coding ability.",
+          "requirement": "Consistent daily coding practice"
+        },
+        {
+          "stage": "Penultimate Year",
+          "title": "Internships and Placement Preparation",
+          "detail": "Secure summer software engineering internships via on-campus placements or off-campus drives. Prepare rigorously for technical interview rounds including system design, aptitude, and HR behavioral assessments.",
+          "requirement": "Strong resume and a portfolio of deployed projects"
+        },
+        {
+          "stage": "Graduation",
+          "title": "Secure Full-Time Software Engineer Role",
+          "detail": "Convert your internship into a full-time offer (PPO) or crack off-campus hiring drives for product-based companies, service-based MNCs, or fast-growing tech startups.",
+          "requirement": "B.Tech/B.E. degree completion with zero active backlogs"
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "BITS-SAT",
+        "VITEEE",
+        "COMEDK UGET",
+        "State CETs (MHT CET, KCET, etc.)"
+      ],
+      "commonMistake": "Focusing solely on college GPA while neglecting practical coding skills, data structures, and real-world project building, which are essential for cracking technical interviews."
+    },
+    "rev:chartered accountant": {
+      "title": "Roadmap to Becoming a Chartered Accountant (CA)",
+      "summary": "A structured pathway for Indian students starting from class 11 to clear the Institute of Chartered Accountants of India (ICAI) rigorous qualification process alongside graduation.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Commerce Stream",
+          "detail": "Opt for the Commerce stream with Accounts, Business Studies, Economics, and Mathematics/Applied Mathematics. Building a strong foundation in these subjects during high school makes the concepts in accountancy much easier to grasp later.",
+          "requirement": "Pass Class 10 board exams from a recognized board"
+        },
+        {
+          "stage": "Class 12 Completion",
+          "title": "Register for CA Foundation",
+          "detail": "Register with the Board of Studies (BoS) of ICAI for the CA Foundation course after passing your Class 12 exams. You can appear for your first attempt in either June or December of that year.",
+          "requirement": "Class 12 pass certificate"
+        },
+        {
+          "stage": "Undergraduate Studies",
+          "title": "Clear CA Foundation & Pursue B.Com",
+          "detail": "Successfully clear the CA Foundation exam while simultaneously enrolling in a regular or distance B.Com degree. A B.Com degree provides essential commerce knowledge and fulfills graduation criteria required by many employers later.",
+          "requirement": "Pass CA Foundation exam"
+        },
+        {
+          "stage": "Intermediate Level",
+          "title": "Clear CA Intermediate & IT/OC Training",
+          "detail": "Prepare for and clear both groups of the CA Intermediate exam. Upon clearing either or both groups, complete the mandatory Integrated Course on Information Technology and Soft Skills (ICITSS) before starting practical training.",
+          "requirement": "Pass CA Foundation or hold a relevant graduation/post-graduation degree (Direct Entry route)"
+        },
+        {
+          "stage": "Practical Training",
+          "title": "Two-Year Articleship (Practical Training)",
+          "detail": "Undergo a mandatory 2-year practical training period (articleship) under a practicing Chartered Accountant. This hands-on experience in auditing, taxation, and accounting is crucial for professional development.",
+          "requirement": "Pass CA Intermediate (both groups) and complete ICITSS training"
+        },
+        {
+          "stage": "Final Stage",
+          "title": "Pass CA Final & Advance IT/Management Training",
+          "detail": "Appear for the CA Final examination during the last 6 months of your articleship or after its completion. Concurrently complete Advanced ICITSS (Management and Communication Skills) training.",
+          "requirement": "Complete specified period of articleship"
+        },
+        {
+          "stage": "Qualification",
+          "title": "Become a Member of ICAI",
+          "detail": "After passing the CA Final exams and completing all training requirements, apply for membership with the Institute of Chartered Accountants of India to officially use the 'CA' prefix.",
+          "requirement": "Pass CA Final (both groups) and all training programs"
+        }
+      ],
+      "examsToWatch": [
+        "CA Foundation",
+        "CA Intermediate",
+        "CA Final",
+        "CUET (for top-tier B.Com admissions)"
+      ],
+      "commonMistake": "Treating CA Foundation and Intermediate casually, and failing to balance regular college attendance with rigorous self-study and practical conceptual understanding required by ICAI."
+    },
+    "rev:pilot": {
+      "title": "Roadmap to Becoming a Commercial Pilot in India",
+      "summary": "Navigate from subject selection in Class 11 to earning a Commercial Pilot License (CPL) through ground classes, flying school, and airline conversion.",
+      "steps": [
+        {
+          "stage": "Class 11-12 (Science Stream)",
+          "title": "Choose Science with Physics and Mathematics",
+          "detail": "Enroll in the Science stream with mandatory Physics and Mathematics, as DGCA requires these subjects to issue a Commercial Pilot License (CPL). Maintain a strong academic foundation while preparing mentally for strict medical fitness standards.",
+          "requirement": "Minimum 50% aggregate in Physics and Mathematics"
+        },
+        {
+          "stage": "Class 12 Completion",
+          "title": "Class 2 Medical Examination",
+          "detail": "Undergo a DGCA-approved Class 2 medical examination as early as possible to ensure you have no disqualifying vision, hearing, or cardiovascular issues before investing heavily in training.",
+          "requirement": "Fit status from a DGCA-empanelled medical examiner"
+        },
+        {
+          "stage": "Post Class 12",
+          "title": "Class 1 Medical & Computerised Pilot Selection System (CPSS)",
+          "detail": "Upgrade to a Class 1 medical certificate, which is mandatory for obtaining a CPL. Clear the CPSS exam (formerly Pilot Aptitude Test), which is a one-time lifetime test required for commercial pilots.",
+          "requirement": "Class 1 Medical clearance and passing CPSS"
+        },
+        {
+          "stage": "Ground School Training",
+          "title": "Clear DGCA Theory Examinations",
+          "detail": "Join a DGCA-approved ground school to study Air Regulation, Aviation Meteorology, Air Navigation, Technical General, and Radio Telephony (RTR-A). Pass the computer-based exams conducted by the DGCA.",
+          "requirement": "Pass all DGCA theory papers"
+        },
+        {
+          "stage": "Flying Training Phase",
+          "title": "Enroll in a Flying Approved Training Organisation (ATO)",
+          "detail": "Join an approved Flying Club or ATO in India or abroad to complete the mandatory 200 hours of flight training. This includes solo flying, cross-country navigation, and multi-engine rating to earn your CPL.",
+          "requirement": "Valid CPL with Multi-Engine and Instrument Ratings"
+        },
+        {
+          "stage": "Airline Entry & Conversion",
+          "title": "Type Rating and Airline Cadet Program/Direct Recruitment",
+          "detail": "Obtain a Type Rating for a specific commercial aircraft (like the Airbus A320 or Boeing 737) and secure an Airline Transport Pilot License (ATPL) theory clearance. Apply for airline job openings or cadet pilot programs to start as a Junior First Officer.",
+          "requirement": "CPL, Type Rating certificate, and English Language Proficiency (ELP Level 4+)"
+        }
+      ],
+      "examsToWatch": [
+        "DGCA CPL Theory Exams",
+        "RTR (Aero) Exam by WPC",
+        "CPSS (Computerised Pilot Selection System)",
+        "Airline Specific Aptitude and Psychometric Tests"
+      ],
+      "commonMistake": "Failing to check Class 1 and Class 2 medical fitness requirements before joining a flying school, leading to wasted financial investments if a disqualifying medical condition is found later."
+    },
+    "rev:lawyer": {
+      "title": "Roadmap to Becoming a Lawyer in India",
+      "summary": "Transition from high school to a professional legal career through integrated law degrees and national entrance examinations.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Stream and Build Foundation",
+          "detail": "Select any stream (Arts, Commerce, or Science) as there is no stream restriction for law. Focus on developing strong English reading comprehension, logical reasoning, and general awareness alongside board exam preparation.",
+          "requirement": "Minimum 45% to 50% aggregate in Class 12 board exams depending on the university"
+        },
+        {
+          "stage": "Class 12 / Post-12th",
+          "title": "Appear for Law Entrance Exams",
+          "detail": "Register and appear for premier law entrance tests like CLAT, AILET, or various state and private university CETs right after completing Class 12.",
+          "requirement": "Class 12 pass certificate or appearance in board exams"
+        },
+        {
+          "stage": "Undergraduate (Years 1 to 5)",
+          "title": "Pursue Integrated B.A. LL.B. (Hons.) or B.B.A. LL.B.",
+          "detail": "Enroll in a 5-year integrated undergraduate law program at a National Law University (NLU) or a reputed private law school. The curriculum combines general humanities/management subjects with core legal education like constitutional law, contracts, and criminal law.",
+          "requirement": "Qualifying score in CLAT/AILET and completion of Class 12"
+        },
+        {
+          "stage": "Final Year of Degree",
+          "title": "Internships and Moot Courts",
+          "detail": "Gain practical exposure by interning under trial court advocates, corporate law firms, NGOs, or judges during semester breaks. Participate actively in moot court competitions to hone advocacy and drafting skills.",
+          "requirement": "Good academic standing in law school"
+        },
+        {
+          "stage": "Post Graduation",
+          "title": "Enroll with State Bar Council",
+          "detail": "Obtain your law degree (LL.B.) and register with your respective State Bar Council as an advocate to legally practice in Indian courts.",
+          "requirement": "Completed 5-year LL.B. degree"
+        },
+        {
+          "stage": "Entry Level Practice",
+          "title": "Clear AIBE and Begin Practice",
+          "detail": "Clear the All India Bar Examination (AIBE) within two years of enrollment to receive the Certificate of Practice. Start practicing independently or join a senior advocate or law firm as a junior associate.",
+          "requirement": "State Bar Council Enrollment"
+        }
+      ],
+      "examsToWatch": [
+        "CLAT (Common Law Admission Test)",
+        "AILET (All India Law Entrance Test)",
+        "SLAT (Symbiosis Law Admission Test)",
+        "MH CET Law",
+        "AIBE (All India Bar Examination)"
+      ],
+      "commonMistake": "Ignoring the importance of serious preparation for entrance exams like CLAT and treating law simply as a backup option, which reduces chances of entering top-tier National Law Universities."
+    },
+    "rev:fashion designer": {
+      "title": "Roadmap to Becoming a Fashion Designer",
+      "summary": "A structured pathway from choosing the right higher secondary stream to earning a design degree and entering the fashion industry.",
+      "steps": [
+        {
+          "stage": "Class 11-12",
+          "title": "Choose Any Stream with Creative Focus",
+          "detail": "Opt for any stream—Arts, Commerce, or Science—based on your comfort, but focus heavily on sketching, observation, and creative arts. Building a habit of maintaining a sketchbook and staying aware of trends and textiles is crucial.",
+          "requirement": "Pass Class 10 board exams"
+        },
+        {
+          "stage": "Class 12 Completion",
+          "title": "Prepare for National Design Entrance Exams",
+          "detail": "Start preparing for premier design entrance tests like NIFT (National Institute of Fashion Technology) and NID (National Institute of Design). Focus on quantitative ability, communication, English, and creative/analytical drawing skills.",
+          "requirement": "Enrolled in or completed Class 12 from a recognized board"
+        },
+        {
+          "stage": "Undergraduate Entry",
+          "title": "Crack Entrance Exams and Secure Admission",
+          "detail": "Clear the written tests (CAT and GAT for NIFT) followed by situation tests or studio tests and personal interviews. Secure admission into a Bachelor of Design (B.Des) in Fashion Design program.",
+          "requirement": "Qualify NIFT/NID/UCEED entrance exams"
+        },
+        {
+          "stage": "Undergraduate Years (1-4)",
+          "title": "Pursue Bachelor of Design (B.Des) in Fashion",
+          "detail": "Spend 4 years mastering garment construction, textile science, fashion illustration, computer-aided design (CAD), and draping. Participate in college fashion shows, craft cluster initiatives, and design competitions to build your portfolio.",
+          "requirement": "Successful completion of previous academic semesters"
+        },
+        {
+          "stage": "Final Year / Post-Grad",
+          "title": "Mandatory Industry Internship & Graduation Project",
+          "detail": "Undertake a 3 to 6-month internship with an established export house, designer label, or retail brand. Complete a final graduation collection showcasing your unique design aesthetic and technical execution.",
+          "requirement": "Enrolled in the final year of B.Des"
+        },
+        {
+          "stage": "Early Career",
+          "title": "Enter the Workforce as a Designer or Stylist",
+          "detail": "Start working as an Assistant Designer, Fashion Stylist, or Merchandiser under senior designers or corporate retail brands. Gaining 2-3 years of floor experience helps you understand production, sourcing, and consumer behavior.",
+          "requirement": "B.Des degree and a strong portfolio"
+        }
+      ],
+      "examsToWatch": [
+        "NIFT Entrance Exam",
+        "NID DAT (Design Aptitude Test)",
+        "UCEED",
+        "SEED (Symbiosis Entrance/Design)",
+        "Pearl Academy Entrance"
+      ],
+      "commonMistake": "Focusing solely on artistic sketching while ignoring garment construction, textile science, and the business side of fashion."
+    },
+    "rev:ias officer": {
+      "title": "Roadmap to IAS Officer",
+      "summary": "A comprehensive journey from selecting the right 11th stream to clearing the Union Public Service Commission (UPSC) Civil Services Examination.",
+      "steps": [
+        {
+          "stage": "Class 11-12",
+          "title": "Choose Humanities/Arts Stream",
+          "detail": "Opt for subjects like History, Political Science, Geography, and Economics. This builds a strong foundational knowledge base directly relevant to the UPSC Civil Services syllabus.",
+          "requirement": "Complete Class 10 board exams"
+        },
+        {
+          "stage": "Undergraduate Degree",
+          "title": "Earn Any Bachelor's Degree",
+          "detail": "Enroll in a 3 or 4-year graduation program (BA, BSc, BCom, BTech, etc.) in any discipline from a recognized university. Utilize these years to build reading habits, current affairs awareness, and analytical skills.",
+          "requirement": "Pass Class 12 board exams"
+        },
+        {
+          "stage": "College Years (Year 2-3)",
+          "title": "Begin UPSC Preparation and NCERTs",
+          "detail": "Start reading standard NCERT textbooks from Class 6 to 12 to build fundamental concepts. Read a daily national newspaper like The Hindu or The Indian Express regularly.",
+          "requirement": "Currently enrolled in college"
+        },
+        {
+          "stage": "Post-Graduation / Final Year",
+          "title": "Appear for UPSC Civil Services Preliminary Exam",
+          "detail": "Register and clear the Civil Services Prelims, which consists of two objective papers: General Studies Paper I and CSAT. You must be at least 21 years old to appear.",
+          "requirement": "Minimum age of 21 years and a Bachelor's degree"
+        },
+        {
+          "stage": "Same Year (Months Later)",
+          "title": "Clear UPSC Civil Services Main Exam",
+          "detail": "Write the descriptive Main examination comprising 9 papers, including an Essay, General Studies papers I-IV, and an optional subject of your choice.",
+          "requirement": "Qualify the UPSC Prelims exam"
+        },
+        {
+          "stage": "Final Stage",
+          "title": "Personality Test (Interview) and Training",
+          "detail": "Attend the UPSC board interview to assess mental alertness and leadership traits. Upon clearing, join Lal Bahadur Shastri National Academy of Administration (LBSNAA) for rigorous civil services training.",
+          "requirement": "Qualify the UPSC Mains exam"
+        }
+      ],
+      "examsToWatch": [
+        "UPSC Civil Services Examination (Prelims + Mains)",
+        "CUET (for central university undergraduate admissions)"
+      ],
+      "commonMistake": "Delaying newspaper reading and current affairs notes until after graduation, which makes covering the vast syllabus of General Studies overwhelming."
+    },
+    "rev:data scientist": {
+      "title": "Data Scientist Career Roadmap",
+      "summary": "A comprehensive guide for Indian students to transition from high school stream selection to becoming a professional data scientist.",
+      "steps": [
+        {
+          "stage": "Class 11 - 12",
+          "title": "Choose Science Stream with Mathematics",
+          "detail": "Opt for the Science stream with Physics, Chemistry, and Mathematics (PCM), along with Computer Science or Statistics if available. Strong fundamentals in calculus, algebra, and probability are absolute prerequisites for data science.",
+          "requirement": "Minimum 60% aggregate in Class 10"
+        },
+        {
+          "stage": "Undergraduate Entrance",
+          "title": "Crack Engineering or Science Entrance Exams",
+          "detail": "Prepare for national and state-level exams like JEE Main, JEE Advanced, or CUET to secure admission into top-tier institutions offering relevant bachelor's degrees.",
+          "requirement": "Class 12 board exams with Physics, Mathematics, and Chemistry"
+        },
+        {
+          "stage": "Undergraduate Degree (Years 1 - 3/4)",
+          "title": "Pursue B.Tech, BCA, or B.Sc in Quantitative Fields",
+          "detail": "Enroll in a Bachelor of Technology (B.Tech) in Computer Science, Artificial Intelligence, and Data Science, or a B.Sc/B.Stat in Statistics or Mathematics. Focus heavily on programming, data structures, and database management.",
+          "requirement": "Valid score in JEE Main/Advanced or CUET"
+        },
+        {
+          "stage": "Skill Development & Internships",
+          "title": "Master Python, SQL, and Machine Learning",
+          "detail": "Learn core data science libraries (Pandas, Scikit-learn, TensorFlow), build real-world projects on GitHub, and secure internships focusing on data analysis or software engineering.",
+          "requirement": "Proficiency in Python and basic statistics"
+        },
+        {
+          "stage": "Post-Graduation (Optional but Recommended)",
+          "title": "Pursue M.Tech or M.Sc in Data Science / AI",
+          "detail": "Clear entrance exams like GATE (for M.Tech) or university-specific tests to pursue a master's degree for advanced roles, deep learning specialization, and better placement opportunities.",
+          "requirement": "Bachelor's degree in a quantitative discipline"
+        },
+        {
+          "stage": "Early Career",
+          "title": "Secure Entry-Level Roles as Data Analyst or Junior Data Scientist",
+          "detail": "Apply for roles such as Data Analyst, Business Analyst, or Junior Machine Learning Engineer to gain industry experience in model deployment, data cleaning, and business communication.",
+          "requirement": "Strong portfolio of data science projects and problem-solving skills"
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "CUET",
+        "GATE (Data Science and Artificial Intelligence - DA)",
+        "BITSAT"
+      ],
+      "commonMistake": "Focusing solely on theory and machine learning algorithms without building a strong foundation in core mathematics (linear algebra, calculus, and probability) and practical programming skills like SQL and Python."
+    },
+    "rev:architect": {
+      "title": "Roadmap to Becoming an Architect in India",
+      "summary": "This career path requires choosing the Science stream with Mathematics in Class 11, clearing national-level architecture entrance exams, and completing a 5-year B.Arch degree.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Science Stream with Mathematics",
+          "detail": "Opt for Physics, Chemistry, and Mathematics (PCM) in your 11th grade under CBSE, ICSE, or state boards. Mathematics is a mandatory regulatory requirement set by the Council of Architecture (COA) for pursuing an architecture degree in India.",
+          "requirement": "Minimum 50% aggregate marks in Physics, Chemistry, and Mathematics, as well as overall in Class 12."
+        },
+        {
+          "stage": "Class 12 Board Exams",
+          "title": "Appear for Board Exams and Prep for Entrance Tests",
+          "detail": "Focus on scoring well in your board exams while simultaneously starting preparation for national-level architecture aptitude tests. Practice sketching, spatial visualization, and logical reasoning alongside your PCM studies.",
+          "requirement": "Must pass Class 12 board exams with PCM."
+        },
+        {
+          "stage": "Entrance Exams",
+          "title": "Crack NATA or JEE Main Paper 2",
+          "detail": "Register and appear for NATA (National Aptitude Test in Architecture) conducted by COA and/or JEE Main Paper 2 (B.Arch) conducted by NTA. These scores are the primary criteria for admission into top architecture colleges like IITs, NITs, and SPA.",
+          "requirement": "Valid score in NATA and/or JEE Main Paper 2."
+        },
+        {
+          "stage": "Undergraduate Degree",
+          "title": "Complete the 5-Year B.Arch Program",
+          "detail": "Enroll in a Bachelor of Architecture (B.Arch) degree approved by the Council of Architecture. The rigorous 10-semester curriculum covers architectural design, building construction, structural engineering, history of architecture, and computer-aided design (CAD).",
+          "requirement": "Admission through JoSAA counseling (for IITs/NITs) or state/institute-level counseling based on entrance scores."
+        },
+        {
+          "stage": "Practical Training",
+          "title": "Undertake Mandatory Internship",
+          "detail": "Complete a compulsory practical training period, usually spanning 6 months to a year during the later semesters of the B.Arch program. Work under a registered senior architect to gain hands-on experience in site execution, client handling, and drafting.",
+          "requirement": "Enrollment in a recognized B.Arch program reaching the internship semester."
+        },
+        {
+          "stage": "Licensing & Registration",
+          "title": "Register with the Council of Architecture (COA)",
+          "detail": "Upon successful graduation with a B.Arch degree, apply for registration with the Council of Architecture (COA). Obtaining this professional license is legally mandatory to practice architecture, sign building plans, and use the title 'Architect' in India.",
+          "requirement": "Graduation degree certificate from a COA-approved institution."
+        }
+      ],
+      "examsToWatch": [
+        "NATA (National Aptitude Test in Architecture)",
+        "JEE Main Paper 2 (B.Arch)",
+        "JEE Advanced (for B.Arch at IIT Kharagpur, IIT Roorkee, and IIT BHU)"
+      ],
+      "commonMistake": "Choosing the Biology/PCB group or Commerce/Arts in Class 11 without Mathematics, which legally disqualifies the student from appearing for NATA and JEE Paper 2 under Council of Architecture norms."
+    },
+    "rev:psychologist": {
+      "title": "Roadmap to Becoming a Psychologist in India",
+      "summary": "A comprehensive guide starting from stream selection in Class 11 to earning a Master's degree and registering as a qualified psychologist in India.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Humanities/Arts with Psychology",
+          "detail": "Select the Humanities (Arts) stream and ensure Psychology is one of your core subjects if available by your board. A science background (PCB) is also acceptable, but humanities builds a strong theoretical foundation.",
+          "requirement": "Pass Class 10 board exams with a good aggregate percentage."
+        },
+        {
+          "stage": "Undergraduate (BA/BSc Psychology)",
+          "title": "Complete a 3 or 4-year Bachelor's Degree",
+          "detail": "Pursue a BA or BSc in Psychology from a recognized university to understand core psychological concepts, human behavior, and research methods. Opt for the 4-year undergraduate research degree if aligned with the new National Education Policy (NEP).",
+          "requirement": "Clear Class 12 board exams and university-specific entrance tests like CUET."
+        },
+        {
+          "stage": "Postgraduate (MA/MSc Psychology)",
+          "title": "Pursue a Master's Degree in Specialized Field",
+          "detail": "Enroll in a 2-year Master's program in Psychology (Clinical, Counseling, Organizational, or Applied Psychology). This is mandatory for advanced practice and specialization.",
+          "requirement": "Complete Bachelor's degree with minimum 50-55% aggregate and clear entrance exams like CUET-PG or institute-specific tests."
+        },
+        {
+          "stage": "Clinical Specialization (Optional but Recommended)",
+          "title": "M.Phil in Clinical Psychology or Professional Diploma",
+          "detail": "If you want to practice as a Clinical Psychologist and diagnose mental disorders, complete an RCI-recognized M.Phil in Clinical Psychology (being phased out into specific professional tracks under new guidelines) or a PsyD.",
+          "requirement": "Hold an MA/MSc in Psychology and clear the rigorous RCI-affiliated entrance examinations and interviews."
+        },
+        {
+          "stage": "Licensure & Practice",
+          "title": "RCI Registration & Internship",
+          "detail": "Register with the Rehabilitation Council of India (RCI) if pursuing clinical psychology, or obtain professional memberships for counseling. Gain supervised practical experience through internships in hospitals, clinics, or schools.",
+          "requirement": "Completion of M.Phil/Professional Diploma and mandatory supervised clinical hours."
+        }
+      ],
+      "examsToWatch": [
+        "CUET (Central Universities Entrance Test) for UG & PG",
+        "RCI-approved Entrance Exams for M.Phil Clinical Psychology",
+        "University-specific entrance tests like TISSMAT, Christ University Entrance Test"
+      ],
+      "commonMistake": "Stopping at a Bachelor's degree and expecting to practice clinically or counsel professionally, when a Master's degree and proper supervised training are legally and ethically required in India."
+    },
+    "rev:teacher": {
+      "title": "Roadmap to Becoming a Teacher in India",
+      "summary": "A comprehensive guide starting from stream selection in Class 11 to completing professional teaching qualifications for schools or higher education.",
+      "steps": [
+        {
+          "stage": "Class 11-12",
+          "title": "Choose Stream and Complete Senior Secondary",
+          "detail": "Choose any stream (Arts, Science, or Commerce) based on your preferred teaching subject. Score a minimum of 50% aggregate marks in your 12th board exams, which is a mandatory requirement for most teacher training programs and universities.",
+          "requirement": "Minimum 50% in Class 12 Boards"
+        },
+        {
+          "stage": "Undergraduate Degree",
+          "title": "Pursue a Bachelor's Degree (BA, B.Sc, or B.Com)",
+          "detail": "Complete a 3 or 4-year undergraduate degree in the specific subject you intend to teach in the future. Building a strong conceptual foundation in your chosen major subject is critical for clearing teacher eligibility tests later.",
+          "requirement": "Passed Class 12"
+        },
+        {
+          "stage": "Teacher Training (Option A: Integrated)",
+          "title": "Alternative: Integrated B.Ed (BA-B.Ed / B.Sc-B.Ed)",
+          "detail": "Instead of a regular graduation followed by B.Ed, students can directly enroll in a 4-year Integrated Teacher Education Program (ITEP) right after Class 12. This saves a year and combines disciplinary knowledge with pedagogical training.",
+          "requirement": "Class 12 with 50% + State/National Entrance Tests"
+        },
+        {
+          "stage": "Teacher Training (Option B: Traditional)",
+          "title": "Pursue Bachelor of Education (B.Ed)",
+          "detail": "After completing your graduation, enroll in a 2-year B.Ed degree program to learn child psychology, classroom management, and modern pedagogical techniques. Admission is typically based on graduation marks or state-level B.Ed entrance exams.",
+          "requirement": "Undergraduate Degree with minimum 50-55%"
+        },
+        {
+          "stage": "Eligibility Certification",
+          "title": "Clear TET (Teacher Eligibility Test)",
+          "detail": "Qualify the Central Teacher Eligibility Test (CTET) or your respective State Teacher Eligibility Test (State TET). Passing TET is a mandatory statutory requirement to become eligible for teaching positions in government and recognized private schools.",
+          "requirement": "B.Ed or D.El.Ed qualification"
+        },
+        {
+          "stage": "Job Application & Higher Studies",
+          "title": "Secure Teaching Position or Pursue Post-Graduation",
+          "detail": "Apply for teaching jobs in schools through recruitment exams like KVS, NVS, DSSSB, or state public service commissions. If aiming to teach in colleges or universities, pursue a Master's degree followed by clearing the UGC-NET exam and completing a Ph.D.",
+          "requirement": "TET cleared / Master's + UGC-NET for college level"
+        }
+      ],
+      "examsToWatch": [
+        "CTET (Central Teacher Eligibility Test)",
+        "State TETs (UPTET, REET, TNTET, etc.)",
+        "KVS / NVS Teacher Recruitment Exams",
+        "CUET (for Undergraduate / B.Ed admissions)",
+        "UGC-NET (for Assistant Professor / College Teaching)"
+      ],
+      "commonMistake": "Focusing solely on completing the graduation degree while ignoring the mandatory requirement of securing at least 50% marks, which creates eligibility roadblocks for admission into B.Ed programs."
+    },
+    "rev:graphic designer": {
+      "title": "Graphic Designer Roadmap",
+      "summary": "A comprehensive guide for Indian students to transition from high school stream selection to a professional graphic design career.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Stream (Any Stream - Arts Preferred) & Build Foundations",
+          "detail": "Opt for any stream in your 11th grade, though Arts or Humanities with subjects like Fine Arts is beneficial. Focus on developing sketching skills, visual aesthetics, and basic computer literacy while maintaining good board exam percentages.",
+          "requirement": "Pass Class 12 from any recognized board (CBSE/ICSE/State) with a minimum of 50% aggregate."
+        },
+        {
+          "stage": "Entrance Exam Preparation",
+          "title": "Prepare and Appear for Design Entrance Exams",
+          "detail": "Start preparing for national and state-level design entrance tests during Class 11 and 12. Focus on creative aptitude, logical reasoning, visualization, and general awareness.",
+          "requirement": "Register and appear for exams like NID DAT, UCEED, NIFT, or private university tests (MITID, Srishti, UID)."
+        },
+        {
+          "stage": "Undergraduate Degree (Years 1-4)",
+          "title": "Pursue a Bachelor of Design (B.Des) in Communication Design",
+          "detail": "Enroll in a 4-year professional B.Des program specializing in Graphic Design, Visual Communication, or Animation. Learn industry-standard software (Adobe Creative Suite), typography, color theory, branding, and user interface basics.",
+          "requirement": "Clear the respective entrance exam and complete counseling for seat allotment."
+        },
+        {
+          "stage": "Undergraduate (Final Year)",
+          "title": "Build a Portfolio and Undertake Internships",
+          "detail": "Create a robust design portfolio showcasing real-world projects, brand identities, packaging, and digital illustrations. Secure a 2-3 month summer internship at a design agency, media house, or corporate marketing department to gain practical experience.",
+          "requirement": "Successful completion of academic semesters and submission of a graduation design project."
+        },
+        {
+          "stage": "Post-Graduation / Entry Level",
+          "title": "Secure Junior Graphic Designer Role or Freelance",
+          "detail": "Apply for Junior Graphic Designer positions in advertising agencies, design studios, tech companies, or start working as an independent freelancer. Continuously update your portfolio with new trends in motion graphics and UI/UX.",
+          "requirement": "A polished digital portfolio (Behance/Dribbble) and a professional resume."
+        }
+      ],
+      "examsToWatch": [
+        "NID DAT (Design Aptitude Test)",
+        "UCEED (Undergraduate Common Entrance Examination for Design)",
+        "NIFT Entrance Exam",
+        "CEED (for post-graduation)",
+        "State-level entrance exams (like MAH-AAC-CET)"
+      ],
+      "commonMistake": "Focusing solely on software proficiency (like Photoshop or Illustrator) while neglecting fundamental design principles, typography, sketching, and building a strong creative portfolio."
+    },
+    "rev:civil engineer": {
+      "title": "Civil Engineer Roadmap in India",
+      "summary": "This roadmap guides a student from choosing the right stream after Class 10 to completing their engineering degree and starting a career as a civil engineer in India.",
+      "steps": [
+        {
+          "stage": "Class 11-12",
+          "title": "Choose Science Stream (PCM)",
+          "detail": "Select Physics, Chemistry, and Mathematics (PCM) along with English. A strong foundation in these subjects is mandatory for engineering entrance exams and the core engineering curriculum.",
+          "requirement": "Minimum 50-60% aggregate in Class 10 board exams"
+        },
+        {
+          "stage": "Class 12 / Post-12",
+          "title": "Appear for Engineering Entrance Exams",
+          "detail": "Prepare for and clear national and state-level engineering entrance tests like JEE Main, JEE Advanced (for IITs), BITSAT, or respective State CETs to secure admission into top engineering colleges.",
+          "requirement": "Class 12 pass with Physics, Chemistry, and Mathematics"
+        },
+        {
+          "stage": "Undergraduate (Years 1-4)",
+          "title": "Pursue B.Tech / B.E. in Civil Engineering",
+          "detail": "Enroll in a 4-year Bachelor of Technology (B.Tech) or Bachelor of Engineering (B.E.) program in Civil Engineering. Focus on core subjects like structural analysis, fluid mechanics, surveying, and geotechnical engineering while securing internships.",
+          "requirement": "Valid score in JEE Main/State CET/College specific entrance test"
+        },
+        {
+          "stage": "Final Year / Post-Graduation",
+          "title": "Gain Practical Experience or Opt for M.Tech",
+          "detail": "Complete mandatory industrial training during the degree. Alternatively, prepare for GATE if you wish to pursue a 2-year M.Tech specialization (such as Structural Engineering or Transportation Engineering) or secure Public Sector Undertaking (PSU) jobs.",
+          "requirement": "B.Tech/B.E. degree in Civil Engineering"
+        },
+        {
+          "stage": "Early Career",
+          "title": "Secure Employment & Professional Licensing",
+          "detail": "Join construction firms, real estate developers, consulting companies, or government bodies (via UPSC Engineering Services or State PSCs) as a Graduate Engineer Trainee or Junior Engineer. Register with relevant engineering bodies if required for specific statutory roles.",
+          "requirement": "B.Tech degree and clearing competitive exams like ESE/GATE if aiming for government sector"
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "BITSAT",
+        "GATE",
+        "UPSC ESE (Engineering Services Examination)",
+        "State CETs (MHT CET, KCET, WBJEE, etc.)"
+      ],
+      "commonMistake": "Neglecting practical site exposure, software skills (AutoCAD, STAAD.Pro, Revit), and internships during the B.Tech degree, relying solely on theoretical textbook knowledge."
+    },
+    "rev:nurse": {
+      "title": "Nursing Career Roadmap in India",
+      "summary": "A comprehensive guide for students aiming to become a Registered Nurse in India, starting from subject selection in Class 11 through degree completion and licensure.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Science Stream (PCB)",
+          "detail": "Select the Science stream with Physics, Chemistry, and Biology (PCB) along with English, as Biology is a mandatory requirement for nursing courses in India. Aim to score at least 45% to 50 aggregate marks in your 12th board exams to meet basic eligibility criteria for entrance exams.",
+          "requirement": "Minimum 45-50% aggregate in 12th PCB"
+        },
+        {
+          "stage": "Class 12 Completion",
+          "title": "Appear for Nursing Entrance Exams",
+          "detail": "Register and appear for national or state-level nursing entrance exams like NEET-UG (accepted by many top institutions), AIIMS Nursing entrance exam, or respective state CETs for B.Sc. Nursing admissions.",
+          "requirement": "Physics, Chemistry, Biology, and English in Class 12"
+        },
+        {
+          "stage": "Undergraduate (Years 1-4)",
+          "title": "Pursue B.Sc. Nursing Degree",
+          "detail": "Enroll in a 4-year Bachelor of Science (B.Sc.) in Nursing program approved by the Indian Nursing Council (INC). This rigorous course combines foundational medical sciences, nursing theory, and extensive clinical practice in hospitals.",
+          "requirement": "Qualified nursing entrance exam or merit in 12th"
+        },
+        {
+          "stage": "Post-Graduation / Internship",
+          "title": "Complete Mandatory Internship",
+          "detail": "Complete the mandatory clinical internship period integrated into the final year of the B.Sc. Nursing curriculum across various hospital departments like ICU, pediatrics, and surgery.",
+          "requirement": "Successful completion of final year B.Sc. exams"
+        },
+        {
+          "stage": "Licensure",
+          "title": "Register with State Nursing Council",
+          "detail": "Register your nursing degree with your respective State Nursing Council to legally practice as a Registered Nurse and Midwife (RN/RM) in India.",
+          "requirement": "Degree certificate from an INC-approved institution"
+        },
+        {
+          "stage": "Early Career",
+          "title": "Begin Employment or Specialize",
+          "detail": "Start working as a staff nurse in government or private hospitals to gain hands-on experience, or prepare for the M.Sc. Nursing entrance exam after 1-2 years of clinical experience if you wish to specialize.",
+          "requirement": "Valid State Nursing Council Registration"
+        }
+      ],
+      "examsToWatch": [
+        "NEET-UG",
+        "AIIMS B.Sc. Nursing Entrance Exam",
+        "JIPMER Nursing Exam",
+        "State Nursing CETs (e.g., KCET, MHT-CET, RUHS Nursing)"
+      ],
+      "commonMistake": "Choosing a nursing college that is not officially recognized by the Indian Nursing Council (INC) or State Nursing Council, which makes the graduate ineligible to register for professional practice."
+    },
+    "rev:journalist": {
+      "title": "Roadmap to Becoming a Journalist in India",
+      "summary": "Navigate from high school subject selection through media entrance exams and bachelor's degrees to entry-level reporting roles in Indian media.",
+      "steps": [
+        {
+          "stage": "Class 11-12",
+          "title": "Choose Humanities/Arts Stream",
+          "detail": "Opt for subjects like English, Political Science, History, and Sociology to build a strong foundation in current affairs, language proficiency, and socio-political awareness. Alternatively, Commerce or Science students are also eligible, but Arts offers the best conceptual grounding.",
+          "requirement": "Minimum 50-60% aggregate in Class 10 board exams"
+        },
+        {
+          "stage": "Class 12 Board Exams",
+          "title": "Prepare for Media Entrance Exams",
+          "detail": "Focus on scoring well in your board exams while simultaneously preparing for mass communication entrance tests. Read English and regional newspapers daily, stay updated on current affairs, and practice creative writing and basic logical reasoning.",
+          "requirement": "Pass Class 12 from any recognized board (CBSE/ICSE/State)"
+        },
+        {
+          "stage": "Undergraduate Entry (1st Year)",
+          "title": "Pursue Bachelor's in Journalism & Mass Communication (BJMC/BA in Journalism)",
+          "detail": "Clear university-specific or national entrance tests like CUET, IIMC entrance, or GGSIPU CET. Enroll in a 3 or 4-year undergraduate degree program that teaches reporting, editing, media ethics, and audio-visual production.",
+          "requirement": "CUET, IIMC Entrance Exam, or individual college tests (e.g., XIC, Symbiosis SET)"
+        },
+        {
+          "stage": "Undergraduate (2nd-3rd Year)",
+          "title": "Internships and Student Media",
+          "detail": "Gain practical exposure by working as an intern for digital news portals, newspapers, or local TV channels. Write articles, help with video editing, build a portfolio of published work, and contribute to college magazines.",
+          "requirement": "Proactive outreach and basic multimedia writing skills"
+        },
+        {
+          "stage": "Post-Graduation (Optional) or Direct Entry",
+          "title": "Master's Degree or Specialized Training",
+          "detail": "Consider a PG Diploma in Journalism from institutes like IIMC, Asian College of Journalism (ACJ), or XIC for high-tier industry connections and intensive practical training, though a direct entry into the job market is also common.",
+          "requirement": "Bachelor's degree in any discipline with minimum 50% marks"
+        },
+        {
+          "stage": "Early Career",
+          "title": "Entry-Level Trainee Journalist or Reporter",
+          "detail": "Start as a Trainee Reporter, Sub-Editor, or Digital Content Producer at news agencies, print houses, or broadcast channels. Focus on building sources, mastering fact-checking, and adapting to fast-paced newsroom deadlines.",
+          "requirement": "Strong news sense, flawless writing skills, and a portfolio"
+        }
+      ],
+      "examsToWatch": [
+        "CUET (Common University Entrance Test)",
+        "IIMC Entrance Exam",
+        "SET (Symbiosis Entrance Test)",
+        "XIC OET (Xavier's Entrance Test)"
+      ],
+      "commonMistake": "Treating journalism purely as a glamorous TV job while ignoring the immense importance of print reading, rigorous fact-checking, and strong grammar."
+    },
+    "rev:chef": {
+      "title": "Roadmap to Becoming a Chef in India",
+      "summary": "A comprehensive guide starting from stream selection after 10th grade to culinary school, training, and entering the professional kitchen hierarchy.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Any Stream (Arts, Commerce, or Science)",
+          "detail": "Colleges offering hospitality and hotel management accept students from any recognized stream. Focus on scoring good aggregate marks in board exams and building good communication skills, as the hospitality industry values interpersonal abilities.",
+          "requirement": "Pass Class 12 with minimum 50% aggregate from CBSE, ICSE, or State Board."
+        },
+        {
+          "stage": "Undergraduate Entrance Exams",
+          "title": "Appear for Hotel Management Entrance Tests",
+          "detail": "Prepare for national and state-level entrance exams for hotel management. The most prominent is NCHMCT JEE for admission to premier Institute of Hotel Management (IHM) campuses across India. Other options include MAHCET HM CET and university-specific tests.",
+          "requirement": "NCHMCT JEE or equivalent state/institutional entrance exam."
+        },
+        {
+          "stage": "Undergraduate Degree (3-4 Years)",
+          "title": "Pursue B.Sc. in Hospitality and Hotel Administration",
+          "detail": "Enroll in a reputed degree program such as the B.Sc. in HHA offered by NCHMCT-affiliated IHMs or a Bachelor in Culinary Arts (BCA). This provides rigorous foundational training in food production, bakery, pastry, nutrition, and kitchen operations.",
+          "requirement": "Qualify entrance exam and secure admission in an IHM or recognized private culinary college."
+        },
+        {
+          "stage": "College Internships",
+          "title": "Complete Industrial Training in 5-Star Hotels",
+          "detail": "Utilize the mandatory industrial training semester during your degree to work in the kitchens of major hotel chains like Taj, Oberoi, Marriott, or ITC. This hands-on exposure is critical for understanding high-pressure commercial kitchen environments.",
+          "requirement": "Enrolled in 2nd or 3rd year of hotel management degree."
+        },
+        {
+          "stage": "Entry-Level Employment",
+          "title": "Join as a Commis or Kitchen Trainee",
+          "detail": "Start your career at the bottom of the kitchen brigade as a Commis (Commis III, II, and I) in luxury hotels, fine dining restaurants, or cruise lines. Expect long hours, repetitive prep work, and intense physical labor to master foundational techniques.",
+          "requirement": "Bachelor's degree in Hotel Management or Culinary Arts."
+        },
+        {
+          "stage": "Specialization & Career Growth",
+          "title": "Advance to Chef de Partie and Sous Chef",
+          "detail": "Specialize in a cuisine or section such as Garde Manger, Patisserie, or Hot Kitchen. With 5 to 10 years of experience, you can promote to Sous Chef and eventually Executive Chef, managing kitchen budgets, menu creation, and staff operations.",
+          "requirement": "Consistent performance, advanced culinary skill development, and leadership experience."
+        }
+      ],
+      "examsToWatch": [
+        "NCHMCT JEE",
+        "MAHCET HM CET",
+        "UPSEE BHMCT",
+        "AIHMCT WAT"
+      ],
+      "commonMistake": "Treating hotel management purely as a glamorous cooking show experience without realizing that entry-level kitchen jobs demand years of grueling physical labor, odd shifts, and repetitive prep work before ever getting to design menus."
+    },
+    "rev:merchant navy officer": {
+      "title": "Roadmap to Becoming a Merchant Navy Officer in India",
+      "summary": "Navigate from high school stream selection to joining the merchant navy as a deck cadet or marine engineer through recognized maritime degrees and sponsor companies.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12 (Science Stream)",
+          "title": "Choose Physics, Chemistry, and Mathematics (PCM)",
+          "detail": "Enroll in the Science stream with mandatory PCM and English, scoring at least 60% aggregate marks in 12th boards and minimum 50% in English. Strong fundamentals in physics and math are absolute prerequisites for all DG Shipping-approved marine engineering and nautical science courses.",
+          "requirement": "Minimum 60% in PCM and 50% in English"
+        },
+        {
+          "stage": "Entrance Examination Preparation",
+          "title": "Clear IMU-CET and Company Sponsorship",
+          "detail": "Appear for the Indian Maritime University Common Entrance Test (IMU-CET). Concurrently, apply for sponsorships from top shipping companies like Anglo-Eastern, Maersk, or Fleet Management, as company sponsorship significantly eases placement and is often required by premier institutes.",
+          "requirement": "IMU-CET qualification and valid medical fitness (DG Shipping standards)"
+        },
+        {
+          "stage": "Undergraduate Degree",
+          "title": "Pursue B.Sc. Nautical Science or B.Tech Marine Engineering",
+          "detail": "Complete a 3-year B.Sc. in Nautical Science (for deck side) or a 4-year B.Tech in Marine Engineering (for engine side) from a DG Shipping-approved maritime institute like IMU campuses, Tolani, or AMET.",
+          "requirement": "Pass semester exams and undergo mandatory STCW safety training courses"
+        },
+        {
+          "stage": "Pre-Sea Training & Boarding",
+          "title": "Complete Pre-Sea Training and Obtain CDC",
+          "detail": "Finish your college curriculum along with mandatory STCW (Standard of Training, Certification and Watchkeeping) basic safety courses. Obtain your Continuous Discharge Certificate (CDC) and Indian passport.",
+          "requirement": "Degree completion, STCW certificates, CDC, and Passport"
+        },
+        {
+          "stage": "Sea-Going Phase (Cadetship)",
+          "title": "Join as a Deck or Engine Cadet",
+          "detail": "Board merchant vessels to complete 12 to 18 months of structured sea-service training. Maintain a Cadet Record Book, learning practical operations, navigation, or engine maintenance under senior officers.",
+          "requirement": "Valid STCW certifications and medical clearance"
+        },
+        {
+          "stage": "Examinations & Licensing",
+          "title": "Clear Mates/2nd Engineer Competency Exams",
+          "detail": "After completing the required sea time, return ashore to clear the written and oral competency examinations conducted by the Directorate General of Shipping (MMD exams) to earn your Second Mate or MEO Class IV certificate of competency.",
+          "requirement": "Required sea-time months and passed MMD written/oral exams"
+        },
+        {
+          "stage": "Professional Career Progression",
+          "title": "Ascend to Captain or Chief Engineer",
+          "detail": "Sail further, gain experience, and clear progressively higher grade certification exams (Chief Mate, Master / MEO Class II, MEO Class III) to eventually command the ship as a Captain or Chief Engineer.",
+          "requirement": "Accumulated sea service and advanced MMD competency certificates"
+        }
+      ],
+      "examsToWatch": [
+        "IMU-CET",
+        "Company Sponsorship Tests and Interviews",
+        "DG Shipping MMD Competency Exams"
+      ],
+      "commonMistake": "Enrolling in non-DG Shipping approved maritime colleges that promise placements, which leads to degrees unrecognized internationally and inability to obtain a valid CDC or Indian seaman book."
+    },
+    "rev:army officer": {
+      "title": "Roadmap to Becoming an Indian Army Officer",
+      "summary": "Guide for an Indian student starting from Class 11 to join the Indian Army as a commissioned officer via NDA, CDS, or direct entries.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Science Stream (PCM)",
+          "detail": "Opt for Physics, Chemistry, and Mathematics (PCM). Mathematics is mandatory if you wish to apply for the National Defence Academy (NDA) via the Army/Navy/Air Force technical entries, though humanities or commerce students can also apply for the Army wing of NDA.",
+          "requirement": "Minimum 50% aggregate in Class 12 for NDA."
+        },
+        {
+          "stage": "Class 12 - First Attempt",
+          "title": "Appear for NDA & NA Examination (I)",
+          "detail": "Apply and appear for the UPSC National Defence Academy exam while in Class 12 or immediately after passing. The exam tests Mathematics and General Ability Test (GAT).",
+          "requirement": "Unmarried male/female candidates aged 16.5 to 19.5 years."
+        },
+        {
+          "stage": "NDA SSB Interview",
+          "title": "Clear the Services Selection Board (SSB)",
+          "detail": "If you clear the written NDA exam, you will undergo a rigorous 5-day SSB interview testing intelligence, personality, psychology, and physical fitness, followed by a medical examination.",
+          "requirement": "Recommendation by SSB Board and medical fitness."
+        },
+        {
+          "stage": "Undergraduate Degree",
+          "title": "Join NDA or Pursue Graduation",
+          "detail": "If selected in NDA, undergo 3 years of joint training at Khadakwasla, Pune, followed by 1 year at IMA, Dehradun, leading to a graduation degree. If not selected, complete a 3 or 4-year graduation degree from a recognized university.",
+          "requirement": "Graduation degree in any discipline for CDS entry later."
+        },
+        {
+          "stage": "Final Year of Graduation",
+          "title": "Appear for CDS Examination",
+          "detail": "Write the Combined Defence Services (CDS) examination conducted by UPSC for Permanent Commission through Indian Military Academy (IMA) / Officers Training Academy (OTA).",
+          "requirement": "Final year graduation students or graduates aged 19 to 24 years."
+        },
+        {
+          "stage": "Post-Graduation / Academy Training",
+          "title": "SSB & Training at IMA / OTA",
+          "detail": "Clear the CDS SSB interview and medicals, then join the Indian Military Academy (IMA Dehradun) for Permanent Commission or Officers Training Academy (OTA Chennai) for Short Service Commission for 18 to 49 months of intensive military training.",
+          "requirement": "Successful completion of SSB and merit list placement."
+        },
+        {
+          "stage": "Commissioning",
+          "title": "Commissioned as Lieutenant",
+          "detail": "Upon successful passing out from the academy, you are commissioned into the Indian Army as a Lieutenant and begin your active military career.",
+          "requirement": "Successful passing out parade at IMA or OTA."
+        }
+      ],
+      "examsToWatch": [
+        "NDA & NA Exam (UPSC)",
+        "CDS Exam (UPSC)",
+        "INET / TGC / UES (for Engineering graduates)",
+        "SSB Interview"
+      ],
+      "commonMistake": "Neglecting physical fitness and English communication skills early on, assuming that clearing only the UPSC written exam is enough to secure a recommendation at the SSB interview."
+    },
+    "rev:pharmacist": {
+      "title": "Roadmap to Becoming a Pharmacist in India",
+      "summary": "Guide from selecting the right high school stream to completing graduation and getting licensed to practice pharmacy in India.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Science Stream (PCB or PCM)",
+          "detail": "Enroll in Class 11 with Physics, Chemistry, and Biology (PCB) or Mathematics (PCM). Biology is generally preferred and often mandatory for pharmacy admissions in many states.",
+          "requirement": "Minimum 50% aggregate marks in 12th board exams with Physics, Chemistry, and Biology/Maths."
+        },
+        {
+          "stage": "Undergraduate Entrance Exams",
+          "title": "Appear for Pharmacy Entrance Tests",
+          "detail": "Prepare for and clear national or state-level pharmacy entrance tests such as NEET UG (accepted by many colleges), CUET, or state-specific CETs like MHT-CET, WBJEE, or GUJCET.",
+          "requirement": "Class 12 pass or appearing."
+        },
+        {
+          "stage": "Bachelor's Degree (B.Pharm)",
+          "title": "Pursue Bachelor of Pharmacy (B.Pharm)",
+          "detail": "Enroll in a 4-year undergraduate B.Pharm program approved by the Pharmacy Council of India (PCI). This comprehensive course covers pharmaceutics, pharmacology, pharmaceutical chemistry, and pharmacognosy.",
+          "requirement": "Qualified entrance exam score and 10+2 Science completion."
+        },
+        {
+          "stage": "Alternative Diploma (D.Pharm)",
+          "title": "Alternative: Diploma in Pharmacy (D.Pharm)",
+          "detail": "If you wish to start practicing sooner, you can opt for a 2-year D.Pharm course, which is sufficient to open a retail medical store or work as a registered pharmacist.",
+          "requirement": "Class 12 Science pass."
+        },
+        {
+          "stage": "Internship & Registration",
+          "title": "Industrial Training and State Pharmacy Council Registration",
+          "detail": "Complete the mandatory practical training period included in your degree/diploma, and register with your respective State Pharmacy Council to obtain your license to practice.",
+          "requirement": "Completed B.Pharm or D.Pharm degree."
+        },
+        {
+          "stage": "Higher Education (Optional)",
+          "title": "Master's Degree (M.Pharm) or Specialization",
+          "detail": "Clear the GPAT exam to pursue a 2-year M.Pharm for specialization in areas like Pharmaceutics, Pharmacology, or Quality Assurance, opening doors to research and senior industry roles.",
+          "requirement": "B.Pharm degree and valid GPAT score."
+        }
+      ],
+      "examsToWatch": [
+        "NEET UG",
+        "GPAT",
+        "CUET",
+        "MHT-CET",
+        "WBJEE",
+        "GUJCET"
+      ],
+      "commonMistake": "Enrolling in a pharmacy college that is not officially approved by the Pharmacy Council of India (PCI), which disqualifies you from getting a state pharmacist license."
+    },
+    "rev:interior designer": {
+      "title": "Roadmap to Becoming an Interior Designer in India",
+      "summary": "This path guides a student from choosing the right high school stream to completing professional design education and entering the interior design industry.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Any Stream with a Focus on Creativity",
+          "detail": "Select Science, Commerce, or Arts based on personal strength; Science (PCM) helps with spatial technicalities, while Arts or Commerce works equally well. Focus on developing drawing skills, spatial awareness, and a keen eye for aesthetics alongside board exam preparation.",
+          "requirement": "Minimum 50% aggregate in Class 12 from any recognized board (CBSE/ICSE/State)."
+        },
+        {
+          "stage": "Class 12 (Board Exam Period)",
+          "title": "Prepare and Appear for Design Entrance Exams",
+          "detail": "Register and prepare for national and institutional design entrance tests such as NID DAT, UCEED, NIFT, or specific private university design tests. Focus on aptitude, logical reasoning, sketching, and creative problem-solving.",
+          "requirement": "Eligibility to apply for undergraduate design entrance examinations."
+        },
+        {
+          "stage": "Undergraduate Degree (Years 1-4)",
+          "title": "Pursue B.Des or B.Sc in Interior Design",
+          "detail": "Enroll in a 4-year Bachelor of Design (B.Des) in Interior Design or Architecture/Interior Space Design at a reputed institute like NID, CEPT, NIFT, or top private universities. The curriculum covers material science, CAD software, ergonomics, color theory, and studio projects.",
+          "requirement": "Qualifying entrance exam scores and Class 12 pass certificate."
+        },
+        {
+          "stage": "Undergraduate (Final Year)",
+          "title": "Internship and Portfolio Development",
+          "detail": "Secure a mandatory summer or semester-long internship with established interior design firms, architecture studios, or real estate developers. Build a comprehensive professional portfolio showcasing design concepts, 3D renderings, and execution drawings.",
+          "requirement": "Completion of core academic modules and design studio projects."
+        },
+        {
+          "stage": "Post-Graduation / Early Career",
+          "title": "Junior Interior Designer or Specialization",
+          "detail": "Join an interior design firm as a Junior Designer to learn client handling, vendor management, estimation, and site execution. Alternatively, some graduates choose a 2-year Master of Design (M.Des) to specialize in sustainable design or lighting.",
+          "requirement": "Bachelor's degree in Interior Design and a strong creative portfolio."
+        },
+        {
+          "stage": "Professional Practice",
+          "title": "Establish Independent Practice or Senior Designer Role",
+          "detail": "After gaining 3-5 years of industry experience and building a robust network of contractors, carpenters, and vendors, you can register your own design studio or take up independent turnkey residential and commercial projects.",
+          "requirement": "Industry experience, professional network, and IIID (Institute of Indian Interior Designers) membership recommended."
+        }
+      ],
+      "examsToWatch": [
+        "NID DAT (National Institute of Design - Design Aptitude Test)",
+        "UCEED (Undergraduate Common Entrance Examination for Design)",
+        "NIFT Entrance Exam",
+        "NATA / JEE Main Paper 2 (if opting for Interior Architecture tracks)",
+        "AIEED, Pearl Academy, and other private university entrance tests"
+      ],
+      "commonMistake": "Focusing solely on artistic sketching while ignoring technical software (like AutoCAD, 3ds Max, Revit) and the practical aspects of material science and on-site vendor management."
+    },
+    "fwd:10th:any": {
+      "title": "Science Stream with PCM (Engineering & Technology)",
+      "summary": "Choosing the Science stream with Physics, Chemistry, and Mathematics (PCM) keeps the maximum number of doors open in the Indian education system, particularly for engineering, technology, and pure sciences.",
+      "steps": [
+        {
+          "stage": "Class 11 - 12 (Science Stream)",
+          "title": "Choose PCM with Computer Science or Economics",
+          "detail": "Focus heavily on mastering core concepts in Physics, Chemistry, and Mathematics while maintaining a strong overall aggregate in your board exams. Build a solid foundation early as this forms the base for all major engineering entrance examinations.",
+          "requirement": "Minimum 60% aggregate in Class 10"
+        },
+        {
+          "stage": "Class 12 Board Exams",
+          "title": "Clear Class 12 Boards",
+          "detail": "Secure competitive board percentages, keeping in mind that many premier engineering institutions and entrance tests require a minimum aggregate of 75% in Class 12.",
+          "requirement": "Minimum 75% aggregate for NITs/IIITs/CFTIs eligibility"
+        },
+        {
+          "stage": "Class 11 - 12 (Parallel)",
+          "title": "Begin Competitive Exam Preparation",
+          "detail": "Enroll in a coaching program or self-study using standard reference books for national-level engineering entrance exams alongside your regular school syllabus.",
+          "requirement": "Consistent daily study habit of 4-6 hours"
+        },
+        {
+          "stage": "Post Class 12",
+          "title": "Appear for Engineering Entrance Exams",
+          "detail": "Take national exams like JEE Main and JEE Advanced, alongside state-level CETs and private university entrance tests to maximize your college admission options.",
+          "requirement": "Class 12 pass with Physics, Mathematics, and Chemistry"
+        },
+        {
+          "stage": "Undergraduate (Years 1 - 4)",
+          "title": "Pursue B.Tech / B.E. Degree",
+          "detail": "Enroll in a 4-year Bachelor of Technology program in a high-demand specialization like Computer Science, Artificial Intelligence, Electronics, or Core Engineering.",
+          "requirement": "Valid score in JEE or other engineering entrance tests"
+        },
+        {
+          "stage": "Final Year / Post-Graduation",
+          "title": "Campus Placements or Higher Studies",
+          "detail": "Secure a software or core engineering job through college placement cells, or prepare for GATE / CAT / foreign master's programs based on your career goals.",
+          "requirement": "B.Tech degree completion with a strong CGPA"
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "BITSAT",
+        "VITEEE",
+        "State CETs (MHT CET, KCET, COMEDK)"
+      ],
+      "commonMistake": "Neglecting board exam preparation while blindly chasing coaching institute problem sets, which can result in failing the 75% eligibility criteria required for top engineering colleges."
+    },
+    "fwd:10th:math & logic": {
+      "title": "Data Science & Artificial Intelligence Engineer Roadmap",
+      "summary": "For a student strong in math and logic after Class 10, entering the Science stream with Mathematics paves the way for top engineering degrees in Computer Science, specialized in AI and Data Science.",
+      "steps": [
+        {
+          "stage": "Class 11 - 12",
+          "title": "Choose Science Stream (PCM with Computer Science)",
+          "detail": "Enroll in Higher Secondary (CBSE/ICSE/State Board) with Physics, Chemistry, and Mathematics (PCM), along with Computer Science or Information Practices as an elective. Focus heavily on strengthening calculus, algebra, and probability, which form the bedrock of machine learning and logic.",
+          "requirement": "Minimum 75% aggregate in Class 10 board exams"
+        },
+        {
+          "stage": "Class 12 Board & Entrance Exams",
+          "title": "Appear for Engineering Entrance Exams",
+          "detail": "Prepare for national and state-level engineering entrance exams during Class 11 and 12. Aim for high percentile scores in JEE Main to secure admission into premier institutes like IITs, NITs, IIITs, or top state engineering colleges.",
+          "requirement": "Passing Class 12 with Physics, Chemistry, and Mathematics"
+        },
+        {
+          "stage": "Undergraduate Degree (Years 1 - 2)",
+          "title": "Bachelor of Technology (B.Tech) in CSE / AI & Data Science",
+          "detail": "Pursue a 4-year B.Tech degree focusing on core computer science subjects, discrete mathematics, data structures, and algorithms. Build a strong foundation in programming languages like Python and C++ during the initial semesters.",
+          "requirement": "Qualifying JEE Main/Advanced or State CETs"
+        },
+        {
+          "stage": "Undergraduate Degree (Years 3 - 4)",
+          "title": "Specialization, Internships, and Capstone Projects",
+          "detail": "Take advanced electives in Machine Learning, Deep Learning, Natural Language Processing, and Big Data. Secure summer internships at tech startups or established firms to apply theoretical logic to real-world datasets.",
+          "requirement": "Maintaining a strong CGPA and active GitHub portfolio"
+        },
+        {
+          "stage": "Post-Graduation / Early Career",
+          "title": "Entry-Level Role or M.Tech Specialization",
+          "detail": "Enter the workforce directly as a Junior Data Analyst, Machine Learning Engineer, or Software Developer. Alternatively, clear GATE to pursue an M.Tech or specialized Master's for advanced research and leadership roles.",
+          "requirement": "B.Tech degree and practical project portfolio"
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "BITSAT",
+        "COMEDK UGET",
+        "GATE (for future post-graduation)"
+      ],
+      "commonMistake": "Neglecting practical programming and coding practice while solely focusing on theoretical mathematics taught in textbooks."
+    },
+    "fwd:10th:science & experiments": {
+      "title": "Science Stream to Engineering/Research Track",
+      "summary": "This pathway focuses on Physics, Chemistry, and Mathematics (PCM) leading to core engineering, technology, or pure science research careers in India.",
+      "steps": [
+        {
+          "stage": "Class 11 - 12",
+          "title": "Choose Science Stream (PCM)",
+          "detail": "Enroll in Physics, Chemistry, and Mathematics with Computer Science or Biology as an elective. Build strong conceptual foundations to prepare for upcoming national-level entrance examinations.",
+          "requirement": "Minimum 75% aggregate in Class 10 Board exams recommended for top coaching and eligibility criteria."
+        },
+        {
+          "stage": "Class 12 (Final Months)",
+          "title": "Appear for Engineering Entrance Exams",
+          "detail": "Register and appear for JEE Main, JEE Advanced, BITSAT, and state-level engineering entrance tests (like MHT-CET or KCET).",
+          "requirement": "Passing Class 12 board exams with Physics, Mathematics, and Chemistry/Biology/Computer Science."
+        },
+        {
+          "stage": "Undergraduate (Years 1 - 4)",
+          "title": "Pursue B.Tech / B.E. or Integrated B.Sc-M.Sc",
+          "detail": "Secure admission into an IIT, NIT, IIIT, or reputed private engineering college based on entrance scores. Focus on hands-on lab experiments, coding, and core domain projects.",
+          "requirement": "Valid score in JEE Main/Advanced or university-specific entrance tests."
+        },
+        {
+          "stage": "Undergraduate (Final Year)",
+          "title": "Internships & Skill Development",
+          "detail": "Take up summer research fellowships (like IAS-INSA-NASI) or industry internships to gain practical exposure and experiment with real-world applications.",
+          "requirement": "Maintaining a strong CGPA (typically above 7.5/10) during undergraduate years."
+        },
+        {
+          "stage": "Post-Graduation / Employment",
+          "title": "Higher Studies or Core R&D Job",
+          "detail": "Choose between entering the core tech/engineering workforce directly or appearing for GATE for an M.Tech, or GRE/TOEFL for studying abroad (MS/PhD).",
+          "requirement": "B.Tech/B.E. degree completion; valid GATE score for Indian Master's programs."
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "BITSAT",
+        "VITEEE",
+        "CUET"
+      ],
+      "commonMistake": "Neglecting NCERT textbooks and conceptual clarity in favor of blindly memorizing formulas for coaching institute tests."
+    },
+    "fwd:10th:business & money": {
+      "title": "Chartered Accountancy & Finance Pathway",
+      "summary": "This pathway leverages an early interest in business and money by steering you into Commerce with Mathematics in Class 11-12, setting you up for top finance degrees or professional qualifications like Chartered Accountancy.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Commerce Stream with Mathematics",
+          "detail": "Enroll in CBSE, ICSE, or State Board taking Accountancy, Business Studies, Economics, and Applied Mathematics or Mathematics. Strong foundational basics here will make college entrance exams and professional courses significantly easier.",
+          "requirement": "Minimum 60-70% aggregate in Class 10 board exams."
+        },
+        {
+          "stage": "Class 12 Board Exams",
+          "title": "Ace Boards and Prepare for Entrances",
+          "detail": "Focus heavily on scoring high percentages in your Class 12 board exams while simultaneously studying for central university entrance tests and professional foundation exams.",
+          "requirement": "Above 85% aggregate recommended for top-tier commerce colleges."
+        },
+        {
+          "stage": "Undergraduation (Years 1-3)",
+          "title": "Pursue B.Com (Hons) or BMS / BBA",
+          "detail": "Get into a premier institution like SRCC, St. Xavier's, or Loyola for a Bachelor of Commerce or Management degree. Use these three years to build practical Excel skills and understand corporate finance.",
+          "requirement": "Clear CUET or college-specific entrance tests."
+        },
+        {
+          "stage": "Post-Class 12 / During Graduation",
+          "title": "Register for CA Foundation or CFA",
+          "detail": "If targeting Chartered Accountancy, clear the CA Foundation right after Class 12 and Intermediate during college. Alternatively, prepare for global certifications like CFA Level 1 during your final year of graduation.",
+          "requirement": "Class 12 pass certificate for CA Foundation."
+        },
+        {
+          "stage": "Post-Graduation",
+          "title": "Articleship or Specialized Master's (MBA)",
+          "detail": "Complete your mandatory 2-year CA articleship under a chartered accountant firm, or work for 2-3 years before cracking the CAT exam to pursue an MBA in Finance from top IIMs.",
+          "requirement": "Clear CA Intermediate and Finals, or CAT for MBA."
+        },
+        {
+          "stage": "Early Career",
+          "title": "Corporate Finance, Investment Banking, or Auditing",
+          "detail": "Step into roles such as Financial Analyst, Investment Banking Associate, Tax Consultant, or Corporate Auditor with top MNCs or Big 4 accounting firms.",
+          "requirement": "Completed professional degree (CA/MBA/CFA)."
+        }
+      ],
+      "examsToWatch": [
+        "CUET",
+        "CA Foundation",
+        "CAT",
+        "CFA Level 1"
+      ],
+      "commonMistake": "Ignoring Mathematics in Class 11 assuming commerce doesn't need it, which severely limits future options in finance, analytics, and top-tier management entrances."
+    },
+    "fwd:10th:art & design": {
+      "title": "Design Career Pathway (B.Des)",
+      "summary": "This pathway guides a student from Class 10 through the Humanities or Science stream into top Indian design schools via national entrance exams for a Bachelor of Design (B.Des) degree.",
+      "steps": [
+        {
+          "stage": "Class 11 - 12",
+          "title": "Choose Stream and Build Fundamentals",
+          "detail": "Opt for any stream (Humanities, Science, or Commerce) based on your school availability, though Humanities or Science with Computer Science helps. Dedicate time to building sketching skills, visual observation, spatial awareness, and a basic design portfolio.",
+          "requirement": "Complete Class 10 with minimum 50% aggregate"
+        },
+        {
+          "stage": "Class 12 (Board Exams)",
+          "title": "Appear for Class 12 Boards and Design Entrances",
+          "detail": "Prepare concurrently for Class 12 board exams and national-level design entrance tests like NIFT, NID DAT, and UCEED. Focus on creative ability, logical reasoning, and general knowledge alongside your regular board studies.",
+          "requirement": "Class 12 passing certificate from a recognized board"
+        },
+        {
+          "stage": "Undergraduate Entry",
+          "title": "Clear Design Entrance Exams (NID, NIFT, UCEED)",
+          "detail": "Crack the two-tier exams: Prelims (Creative Ability Test and General Ability Test) followed by Mains (Studio Test and Personal Interview). Securing a high rank ensures admission into premier institutes like NID Ahmedabad, top NIFT campuses, or IIT Bombay/Guwahati for B.Des.",
+          "requirement": "Valid score in NID DAT, NIFT, or UCEED"
+        },
+        {
+          "stage": "Years 1 to 4 of College",
+          "title": "Pursue Bachelor of Design (B.Des)",
+          "detail": "Complete a 4-year professional B.Des program specializing in Industrial Design, Communication Design, Fashion Design, Interaction Design, or Textile Design. Engage in live projects, material workshops, and collaborative studios.",
+          "requirement": "Admission into a 4-year B.Des program"
+        },
+        {
+          "stage": "Final Year",
+          "title": "Internships and Graduation Project",
+          "detail": "Secure industry internships during semester breaks and execute a comprehensive capstone graduation project. Build a robust digital portfolio showcasing your problem-solving process and design prototypes.",
+          "requirement": "Completion of core coursework"
+        },
+        {
+          "stage": "Post-Graduation",
+          "title": "Entry-Level Design Roles or Higher Studies",
+          "detail": "Enter the industry as a UX/UI Designer, Product Designer, Graphic Designer, or Fashion Stylist through campus placements or portfolio applications. Alternatively, prepare for M.Des via CEED for specialized master's training.",
+          "requirement": "B.Des Degree and a professional portfolio"
+        }
+      ],
+      "examsToWatch": [
+        "NID DAT (Design Aptitude Test)",
+        "NIFT Entrance Examination",
+        "UCEED (Undergraduate Common Entrance Examination for Design)"
+      ],
+      "commonMistake": "Treating design entrances purely as art exams; top design schools look for analytical thinking, empathy, and problem-solving skills rather than just beautiful sketching."
+    },
+    "fwd:10th:writing & communication": {
+      "title": "Journalism & Mass Communication Roadmap",
+      "summary": "A structured career path tailored for a Class 10 graduate passionate about writing and communication, leading to dynamic roles in media, content creation, and corporate communications.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12 (Humanities/Arts Stream)",
+          "title": "Build a Strong Foundation in Arts",
+          "detail": "Choose the Humanities/Arts stream with subjects like English, Political Science, History, and Psychology to enhance critical thinking, reading comprehension, and expression. Focus on scoring well in English while starting a personal blog or school magazine to hone writing skills.",
+          "requirement": "Minimum 50-60% aggregate in Class 10 board exams"
+        },
+        {
+          "stage": "Class 12 Completion",
+          "title": "Appear for Media Entrance Exams",
+          "detail": "Prepare for national and university-level entrance tests for journalism and mass communication right after your Class 12 board exams. Keep backup options open by registering for CUET for central universities offering BA in Journalism.",
+          "requirement": "Passed Class 12 from any recognized board (CBSE/ICSE/State) with English as a core subject"
+        },
+        {
+          "stage": "Undergraduate Degree (Years 1-3)",
+          "title": "Pursue BA in Journalism & Mass Communication (BAJMC)",
+          "detail": "Enroll in a reputed 3-year BAJMC or B.A. (Hons) English program. Learn the fundamentals of reporting, media ethics, digital storytelling, video editing, and public relations while contributing actively to college fests and student publications.",
+          "requirement": "Qualify entrance tests like IIMC, CUET, or institute-specific tests like XIC, Symbiosis (SET)"
+        },
+        {
+          "stage": "Undergraduate (Summer Breaks)",
+          "title": "Secure Internships and Freelance Gigs",
+          "detail": "Utilize college semesters and summer breaks to intern with digital media houses, newspapers, PR agencies, or corporate content teams. Build a robust digital portfolio showcasing published articles, blog posts, or video scripts.",
+          "requirement": "Basic proficiency in writing tools, WordPress, and social media platforms"
+        },
+        {
+          "stage": "Post-Graduation or Early Career (Years 4-5)",
+          "title": "Specialize or Enter the Workforce",
+          "detail": "Choose to either enter the industry directly as a Content Writer, Copywriter, or Junior Journalist, or pursue a specialized PG diploma in advertising, broadcast journalism, or corporate communications to accelerate career growth.",
+          "requirement": "Bachelor's degree in any discipline with a strong writing portfolio"
+        }
+      ],
+      "examsToWatch": [
+        "CUET (Common University Entrance Test)",
+        "IIMC Entrance Exam (Indian Institute of Mass Communication)",
+        "SET (Symbiosis Entrance Test for Mass Communication)",
+        "XIC OET (Xavier Institute of Communications Online Entrance Test)",
+        "ACJ Entrance Exam (Asian College of Journalism)"
+      ],
+      "commonMistake": "Ignoring the technical side of modern media—relying solely on traditional writing skills without learning SEO, basic video editing, content analytics, and digital publishing tools."
+    },
+    "fwd:10th:people & helping others": {
+      "title": "Roadmap to Healthcare & Medicine via PCB Stream",
+      "summary": "For a student passionate about helping people, pursuing the Science stream with Physics, Chemistry, and Biology (PCB) opens the door to impactful careers in medicine, allied health, and psychological counseling.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Science (PCB) Stream",
+          "detail": "Enroll in CBSE, ICSE, or State Board with Physics, Chemistry, Biology, and English. Focus heavily on mastering Biology and Chemistry concepts as they form the bedrock of healthcare professions.",
+          "requirement": "Minimum 50% aggregate in Class 10 with a strong inclination toward science"
+        },
+        {
+          "stage": "Class 12 Board Exams",
+          "title": "Qualify Senior Secondary Board Exams",
+          "detail": "Maintain a high academic standing in your board exams while simultaneously preparing for medical entrance tests. Most professional health science courses require a minimum aggregate of 50% in PCB subjects.",
+          "requirement": "Pass Class 12 with Physics, Chemistry, Biology, and English"
+        },
+        {
+          "stage": "Post-Class 12",
+          "title": "Appear for National & State Entrance Exams",
+          "detail": "Register for NEET-UG, which is the mandatory gateway for MBBS, BDS, AYUSH, and nursing courses in India. For psychology or social work paths, prepare for university entrance tests via CUET.",
+          "requirement": "NEET-UG registration and eligibility criteria fulfillment"
+        },
+        {
+          "stage": "Undergraduate Degree (Years 1-5)",
+          "title": "Pursue MBBS, Nursing, or Psychology",
+          "detail": "Complete your professional undergraduate degree. For MBBS, this involves 4.5 years of coursework followed by a mandatory 1-year rotatory internship in a hospital setting.",
+          "requirement": "Qualifying score in NEET-UG or CUET"
+        },
+        {
+          "stage": "Post-Graduation / Specialization",
+          "title": "Specialize or Enter Healthcare Practice",
+          "detail": "Pursue an MD/MS for medical specialization, a Master's in Psychology for counseling roles, or gain direct employment in hospitals, NGOs, and community health organizations.",
+          "requirement": "Completion of undergraduate degree and relevant entrance tests like NEET-PG"
+        }
+      ],
+      "examsToWatch": [
+        "NEET-UG",
+        "CUET",
+        "AIIMS Nursing Entrance",
+        "NEET-PG"
+      ],
+      "commonMistake": "Neglecting Physics and Chemistry while focusing solely on Biology, which severely hurts performance in competitive entrance exams like NEET."
+    },
+    "fwd:10th:computers & tech": {
+      "title": "Computer Science Engineering Roadmap",
+      "summary": "This path guides a student passionate about technology from Class 10 through the Science-Math stream into a premier engineering degree and a career in software development.",
+      "steps": [
+        {
+          "stage": "Class 11 - 12 (Science Stream)",
+          "title": "Choose Physics, Chemistry, Mathematics (PCM) with Computer Science",
+          "detail": "Enroll in a recognized board (CBSE/ICSE/State) with PCM and Computer Science or Information Practices. Focus heavily on strengthening your core mathematics and logical thinking, while beginning to learn coding languages like Python or C++.",
+          "requirement": "Minimum 60% aggregate in Class 10 board exams"
+        },
+        {
+          "stage": "Class 12 (Board Exams & Entrances)",
+          "title": "Appear for Engineering Entrance Exams",
+          "detail": "Prepare for national and state-level engineering entrances alongside your Class 12 board exams. Dedicate consistent hours to solving previous years' question papers for JEE Main, JEE Advanced, and relevant state CETs.",
+          "requirement": "Minimum 75% aggregate in Class 12 for top-tier institutes (NITs/IIITs/IITs)"
+        },
+        {
+          "stage": "Undergraduate (Years 1 - 2)",
+          "title": "Pursue B.Tech in Computer Science and Engineering (CSE)",
+          "detail": "Secure admission into a B.Tech or B.E. program in Computer Science. Focus on foundational subjects like Data Structures, Algorithms, Object-Oriented Programming, and Database Management Systems.",
+          "requirement": "Valid score in JEE Main, JEE Advanced, or State CETs"
+        },
+        {
+          "stage": "Undergraduate (Years 3 - 4)",
+          "title": "Skill Development and Internships",
+          "detail": "Build real-world software projects, participate in coding platforms (LeetCode, Codeforces), and secure summer internships in tech companies. Specialise in domains like AI/ML, Cybersecurity, or Full-Stack Development based on your interest.",
+          "requirement": "Active GitHub profile and practical coding portfolio"
+        },
+        {
+          "stage": "Post-Graduation / Employment",
+          "title": "Campus Placements or Higher Studies",
+          "detail": "Secure a role as a Software Engineer through campus placements or off-campus drives. Alternatively, prepare for GATE if you wish to pursue an M.Tech or higher specialization from premier institutes.",
+          "requirement": "B.Tech degree in Computer Science"
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "BITS-SAT",
+        "State CETs (MHT-CET, KCET, COMEDK)",
+        "GATE (for higher studies)"
+      ],
+      "commonMistake": "Neglecting core Mathematics and focusing solely on syntax-based coding during Class 11 and 12, which makes cracking tough engineering entrance exams and core computer science concepts difficult later."
+    },
+    "fwd:10th:not sure yet": {
+      "title": "Science (PCM) & Engineering Roadmap",
+      "summary": "Since the student is undecided after Class 10, choosing the Science PCM (Physics, Chemistry, Mathematics) stream keeps the maximum number of career options open, ranging from engineering and architecture to aviation, defense, and pure sciences.",
+      "steps": [
+        {
+          "stage": "Class 11 & 12",
+          "title": "Choose Science Stream (PCM + English + Optional)",
+          "detail": "Enroll in CBSE, ICSE, or State Board with Physics, Chemistry, and Mathematics. Select an optional subject like Computer Science, Economics, or Physical Education, and maintain a strong aggregate above 75% to meet eligibility criteria for higher education and entrance exams.",
+          "requirement": "Minimum 60-70% in Class 10 board exams, especially in Mathematics and Science"
+        },
+        {
+          "stage": "Class 11 & 12 (Parallel)",
+          "title": "Build Foundational Aptitude for Entrances",
+          "detail": "Begin balanced preparation for competitive exams alongside board studies. Focus heavily on conceptual clarity in physics, problem-solving in mathematics, and physical chemistry to ease the transition into rigorous entrance exam coaching.",
+          "requirement": "Consistent daily study habit of 2-3 hours"
+        },
+        {
+          "stage": "Class 12 (Board Exams)",
+          "title": "Clear Board Exams with Strong Scores",
+          "detail": "Focus on scoring well in board examinations. Many premier technical institutes and centralized counselling processes require a minimum aggregate percentage (often 75% for JEE Advanced) or top 20 percentile in respective board exams.",
+          "requirement": "Passing Class 12 board exams with required board-specific percentages"
+        },
+        {
+          "stage": "Post Class 12",
+          "title": "Appear for Engineering & National Entrance Exams",
+          "detail": "Take national and state-level entrance tests like JEE Main, JEE Advanced, BITSAT, or state CETs to secure admission into top-tier technology institutes for a Bachelor of Technology (B.Tech) or Bachelor of Engineering (B.E.) degree.",
+          "requirement": "Valid scorecards in respective national or state entrance exams"
+        },
+        {
+          "stage": "Undergraduate (Years 1-4)",
+          "title": "Pursue B.Tech / B.E. and Explore Specializations",
+          "detail": "Complete the 4-year engineering degree. Utilize the first two years to explore diverse fields like Computer Science, Artificial Intelligence, Electronics, Mechanical, or Civil engineering before locking down internships and final placements.",
+          "requirement": "Admission into an AICTE-approved engineering college"
+        },
+        {
+          "stage": "Graduation / Final Year",
+          "title": "Placement, Higher Studies, or Civil Services",
+          "detail": "Choose between campus placements for corporate roles, preparing for GATE for an M.Tech, taking the CAT for an MBA, or appearing for UPSC Civil Services examinations, leveraging the rigorous analytical foundation built during engineering.",
+          "requirement": "Successful completion of B.Tech degree with a competitive CGPA"
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "BITSAT",
+        "State CETs (MHT-CET, KCET, COMEDK)",
+        "CUET"
+      ],
+      "commonMistake": "Falling behind in Class 11 Mathematics and Physics, which creates massive conceptual backlog and makes clearing competitive entrance exams extremely difficult by Class 12."
+    },
+    "fwd:12th:any": {
+      "title": "General Graduation via CUET & Corporate Career",
+      "summary": "Since no specific stream or interest was provided, pursuing a versatile Bachelor of Commerce (B.Com) or Bachelor of Arts (B.A.) through the Common University Entrance Test (CUET) offers the widest range of flexibility to explore diverse career options.",
+      "steps": [
+        {
+          "stage": "Class 12 (Completed)",
+          "title": "Reflect and Prepare for CUET",
+          "detail": "Since you have just finished Class 12, focus on preparing for the CUET exam to secure admission into top central and state universities for general graduation degrees.",
+          "requirement": "Class 12 pass certificate"
+        },
+        {
+          "stage": "Year 1 of Graduation",
+          "title": "Explore Electives and Skills",
+          "detail": "Enroll in a versatile undergraduate program like B.Com, B.A. (Economics/Political Science), or BBA. Use the first year to explore subjects, join college societies, and build basic computer and communication skills.",
+          "requirement": "Admission via CUET or merit"
+        },
+        {
+          "stage": "Year 2 of Graduation",
+          "title": "Internships and Certifications",
+          "detail": "Start building your resume by taking up short-term internships, online certifications in data analytics, digital marketing, or finance, depending on what catches your interest.",
+          "requirement": "Basic academic standing"
+        },
+        {
+          "stage": "Year 3 of Graduation",
+          "title": "Career Path Selection",
+          "detail": "Decide whether you want to enter the job market directly through campus placements or prepare for higher education like an MBA, MCA, civil services, or specialized master's programs.",
+          "requirement": "Final year of graduation"
+        },
+        {
+          "stage": "Post-Graduation / Early Career",
+          "title": "First Job or Higher Studies",
+          "detail": "Secure an entry-level corporate role, government job via SSC/Banking exams, or pursue a postgraduate degree like an MBA to accelerate career growth.",
+          "requirement": "Undergraduate degree"
+        }
+      ],
+      "examsToWatch": [
+        "CUET",
+        "CAT / MAT (if pursuing MBA later)",
+        "SSC CGL",
+        "IBPS PO / Banking Exams"
+      ],
+      "commonMistake": "Remaining completely passive during graduation without building any practical skills, internships, or networking, which leads to difficulty in finding employment after graduation."
+    },
+    "fwd:12th:math & logic": {
+      "title": "B.Tech in Computer Science and Engineering / Data Science",
+      "summary": "Capitalize on strong mathematical and logical aptitude by pursuing a premier engineering degree in Computer Science or Data Science, leading to high-demand roles in software engineering, artificial intelligence, and analytics.",
+      "steps": [
+        {
+          "stage": "Class 12 (Just Finished)",
+          "title": "Prepare for Engineering Entrance Exams",
+          "detail": "Focus heavily on intensive preparation for national and state-level engineering entrance exams like JEE Main, JEE Advanced, and state CETs. Strengthen core concepts in calculus, algebra, vectors, and physics to build a solid base for logical problem-solving.",
+          "requirement": "Class 12 pass with Physics, Chemistry, and Mathematics (PCM) with minimum 75% aggregate."
+        },
+        {
+          "stage": "Year 1 (B.Tech Entry)",
+          "title": "Secure Admission and Master Foundations",
+          "detail": "Gain admission into a B.Tech or B.E. program in Computer Science, Information Technology, or Data Science. Focus your first year on mastering fundamental programming languages like C++ or Python, alongside discrete mathematics and data structures.",
+          "requirement": "Valid score in JEE Main/Advanced or State CETs."
+        },
+        {
+          "stage": "Year 2",
+          "title": "Core CS Concepts and Skill Expansion",
+          "detail": "Dive deep into advanced algorithms, database management systems, and object-oriented programming. Begin participating in competitive programming platforms like Codeforces or LeetCode to sharpen your logical acumen.",
+          "requirement": "Maintain a strong CGPA (typically above 7.5/8.0)."
+        },
+        {
+          "stage": "Year 3",
+          "title": "Specialization and Internships",
+          "detail": "Choose electives aligned with your interests, such as Artificial Intelligence, Machine Learning, Cybersecurity, or Cloud Computing. Secure a summer software engineering or data analysis internship to gain real-world industry exposure.",
+          "requirement": "Build a robust GitHub profile showcasing personal or academic coding projects."
+        },
+        {
+          "stage": "Year 4",
+          "title": "Major Capstone Project and Placements",
+          "detail": "Execute a comprehensive final-year capstone project that solves a practical problem using logic and coding. Participate in campus placement drives or apply off-campus for Software Developer, Data Analyst, or Core Engineering roles.",
+          "requirement": "Completion of all degree credits without active backlogs."
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "BITS-AT",
+        "VITEEE",
+        "State CETs (MHT-CET, COMEDK, KCET)"
+      ],
+      "commonMistake": "Focusing solely on rote learning for board exams rather than developing core conceptual clarity and hands-on coding skills required to crack competitive programming and technical interviews."
+    },
+    "fwd:12th:science & experiments": {
+      "title": "B.Tech in Biotechnology / Applied Sciences",
+      "summary": "This path bridges core scientific experimentation with cutting-edge industry applications, ideal for a Class 12 Science graduate who loves hands-on lab work and research.",
+      "steps": [
+        {
+          "stage": "Class 12 Completion & Prep",
+          "title": "Focus on National Entrance Exams",
+          "detail": "Prepare intensively for engineering and science entrance tests covering Physics, Chemistry, and Mathematics or Biology, depending on your Class 12 combination.",
+          "requirement": "Minimum 50-60% aggregate in Class 12 Physics, Chemistry, and Biology/Math from a recognized Indian board."
+        },
+        {
+          "stage": "Entrance Exams",
+          "title": "Appear for JEE Main, CUET, and State CETs",
+          "detail": "Take exams like JEE Main for premier institutes (NITs/IIITs), CUET for central universities offering B.Sc. Research, and state-level CETs for regional engineering colleges.",
+          "requirement": "Valid scorecard in JEE Main, CUET, or relevant state entrance exam."
+        },
+        {
+          "stage": "Undergraduate Degree (Years 1-2)",
+          "title": "Build Fundamental Laboratory Skills",
+          "detail": "Enroll in a 4-year B.Tech in Biotechnology, Biomedical Engineering, or a 4-year B.Sc. (Hons) with Research. Focus heavily on practical lab sessions, instrumentation, and core sciences.",
+          "requirement": "Admission into an AICTE/UGC-approved institution."
+        },
+        {
+          "stage": "Undergraduate Degree (Years 3-4)",
+          "title": "Internships and Undergraduate Research",
+          "detail": "Secure summer research internships at premier Indian institutes like IITs, IISERs, or CSIR labs. Work on a final-year thesis involving active experimental research.",
+          "requirement": "Good academic standing (CGPA) and recommendation from faculty."
+        },
+        {
+          "stage": "Post-Graduation or Entry-Level",
+          "title": "Choose Industry R&D or Higher Studies",
+          "detail": "Either enter the workforce as a Research Associate in biotech/pharma firms, or prepare for exams like GATE, CSIR-NET, or GRE to pursue an M.Tech or Ph.D. abroad or in India.",
+          "requirement": "Bachelor's degree in a relevant science or engineering discipline."
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "CUET",
+        "NEST",
+        "GATE (Future)",
+        "CSIR-NET (Future)"
+      ],
+      "commonMistake": "Treating science purely as textbook theory during Class 12 without developing strong fundamental lab intuition and failing to apply for early research internships."
+    },
+    "fwd:12th:business & money": {
+      "title": "Chartered Accountancy & Finance Career Roadmap",
+      "summary": "Pursue a Bachelor of Commerce (B.Com) alongside the Chartered Accountancy (CA) course regulated by ICAI to build a lucrative career in finance, taxation, and business management.",
+      "steps": [
+        {
+          "stage": "Class 12 Completed",
+          "title": "Register for CA Foundation & Enroll in B.Com",
+          "detail": "Register for the CA Foundation exam through the Institute of Chartered Accountants of India (ICAI) and simultaneously secure admission into a reputed B.Com or B.Com (Honours) college.",
+          "requirement": "Class 12 pass certificate from a recognized board"
+        },
+        {
+          "stage": "Year 1 (Post Class 12)",
+          "title": "Clear CA Foundation Exam",
+          "detail": "Prepare for and clear the CA Foundation exam, which tests basic accounting, mercantile law, quantitative aptitude, and business economics. This is the official gateway into the CA curriculum.",
+          "requirement": "CA Foundation registration and board exam marksheet"
+        },
+        {
+          "stage": "Year 1 - 2",
+          "title": "Pursue B.Com Degree & CA Intermediate",
+          "detail": "While studying your first and second years of B.Com, rigorously prepare for the CA Intermediate examination consisting of six papers divided into two groups.",
+          "requirement": "Passed CA Foundation and graduation college admission"
+        },
+        {
+          "stage": "Year 3",
+          "title": "Clear CA Intermediate & Begin Articleship",
+          "detail": "Clear both groups of CA Intermediate. Once passed, register for a mandatory 2-year practical training period (Articleship) under a practicing Chartered Accountant to gain real-world corporate exposure.",
+          "requirement": "Pass CA Intermediate (Group 1 or Both)"
+        },
+        {
+          "stage": "Year 4 - 5",
+          "title": "Complete Articleship & Clear CA Final",
+          "detail": "Balance your practical articleship training with preparation for the CA Final exams. Clearing the CA Final and completing the articling period grants you the official 'Chartered Accountant' designation.",
+          "requirement": "Completion of Articleship and CA Intermediate"
+        },
+        {
+          "stage": "Post Graduation",
+          "title": "Corporate Placement or Practice",
+          "detail": "Leverage campus placement drives conducted by ICAI or build your own financial consultancy, taxation firm, or advisory practice serving businesses and high-net-worth individuals.",
+          "requirement": "Qualified CA (ICAI membership)"
+        }
+      ],
+      "examsToWatch": [
+        "CA Foundation",
+        "CA Intermediate",
+        "CA Final",
+        "CUET (for top-tier B.Com admissions)"
+      ],
+      "commonMistake": "Treating B.Com and CA preparation in isolation rather than synchronizing them, or neglecting practical articleship learning which is critical for clearing the CA Final."
+    },
+    "fwd:12th:art & design": {
+      "title": "Bachelor of Design (B.Des) in Industrial or Communication Design",
+      "summary": "A professional path bridging creative expression and commercial application through India's premier design institutes.",
+      "steps": [
+        {
+          "stage": "Class 12 Completion",
+          "title": "Prepare and Appear for Design Entrance Exams",
+          "detail": "Focus intensely on cracking national-level design entrance tests like NID DAT, UCEED, or NIFT. Dedicate time to building observation skills, sketching proficiency, and creative problem-solving capabilities.",
+          "requirement": "Class 12 pass from any stream (Science, Commerce, or Arts) with minimum aggregate marks as specified by the institute."
+        },
+        {
+          "stage": "Year 1 - 2",
+          "title": "Foundation Programme in Design",
+          "detail": "Undergo a rigorous first year focusing on fundamentals of form, color, geometry, material exploration, and visual perception. Transition into your chosen specialization (such as UX/UI, Animation, Fashion, or Product Design) by the end of year two.",
+          "requirement": "Admission into an institution like NID, IIT (IDC), or a top-tier private design school."
+        },
+        {
+          "stage": "Year 3",
+          "title": "Advanced Specialization & Industry Projects",
+          "detail": "Work on live industry briefs, collaborate with manufacturing or tech sectors, and learn advanced digital design tools relevant to your specialization. Focus heavily on portfolio development, which is critical for employment.",
+          "requirement": "Successful completion of foundation and intermediate design studios."
+        },
+        {
+          "stage": "Year 4",
+          "title": "Graduation Project and Internship",
+          "detail": "Secure a 4-to-6 month mandatory industrial internship with a design agency, studio, or corporate design team. Execute a comprehensive capstone graduation project to showcase your distinct design methodology.",
+          "requirement": "Completion of all academic coursework up to the final semester."
+        },
+        {
+          "stage": "Post-Graduation",
+          "title": "Early Career as a Junior Designer",
+          "detail": "Join design firms, tech companies, or creative agencies as a UX Designer, Product Designer, or Visual Artist. Build a robust professional network and continuously update your digital portfolio.",
+          "requirement": "Bachelor of Design (B.Des) degree and a professional portfolio."
+        }
+      ],
+      "examsToWatch": [
+        "NID DAT (Design Aptitude Test)",
+        "UCEED (Undergraduate Common Entrance Examination for Design)",
+        "NIFT Entrance Exam",
+        "CEED (for future post-graduation if desired)"
+      ],
+      "commonMistake": "Treating design entrances like fine arts exams by focusing solely on beautiful rendering instead of logical problem-solving, ergonomics, and user-centric thinking."
+    },
+    "fwd:12th:writing & communication": {
+      "title": "BA in Journalism & Mass Communication / Creative Writing",
+      "summary": "This path leads to a dynamic career in media, content creation, advertising, and corporate communications for students passionate about storytelling and writing.",
+      "steps": [
+        {
+          "stage": "Class 12 Completion",
+          "title": "Select Target Universities & Prep for Entrances",
+          "detail": "Shortlist top media and humanities institutes in India. Register for university-specific tests and general aptitude tests required for media admissions.",
+          "requirement": "Minimum 50% aggregate in Class 12 from any recognized board (Science, Commerce, or Arts)"
+        },
+        {
+          "stage": "Mid-Year (May - July)",
+          "title": "Clear Entrance Exams & Secure Admission",
+          "detail": "Appear for university entrance exams like CUET, IIMC entrance, or institute-specific tests (e.g., XIC, Symbiosis SET). Complete counseling and secure admission into a BA in Journalism, Mass Media, or English (Hons).",
+          "requirement": "Valid score in CUET or respective institute entrance exam"
+        },
+        {
+          "stage": "First & Second Year of Graduation",
+          "title": "Build Foundation & Create a Portfolio",
+          "detail": "Focus on core subjects like media ethics, reporting, creative writing, and digital media. Start a personal blog, contribute to college magazines, and secure short-term content writing internships.",
+          "requirement": "Consistent academic performance and active campus media involvement"
+        },
+        {
+          "stage": "Third Year of Graduation",
+          "title": "Specialization & Major Internships",
+          "detail": "Choose an elective track such as digital journalism, advertising copy, PR, or screenwriting. Undertake high-impact internships with media houses, digital agencies, or publishing houses.",
+          "requirement": "Strong portfolio of published articles or copywriting samples"
+        },
+        {
+          "stage": "Post-Graduation Entry",
+          "title": "Junior Writer / Content Specialist Role",
+          "detail": "Enter the workforce as a Junior Content Writer, Copywriter, or Editorial Assistant. Alternatively, prepare for specialized Master's programs like MA in Mass Communication or Advertising if opting for higher studies.",
+          "requirement": "Bachelor's degree and a robust writing portfolio"
+        }
+      ],
+      "examsToWatch": [
+        "CUET (Common University Entrance Test)",
+        "IIMC Entrance Exam",
+        "SYMBIOSIS SET (Symbiosis Entrance Test)",
+        "XIC OET (Xavier Institute of Communications Online Entrance Test)",
+        "FTII / SRFTI (for film and screenwriting later)"
+      ],
+      "commonMistake": "Treating a writing degree as purely theoretical and failing to build a digital portfolio, personal blog, or practical internship experience during college."
+    },
+    "fwd:12th:people & helping others": {
+      "title": "Roadmap to a Career in Clinical Psychology & Counseling",
+      "summary": "This pathway guides a Class 12 graduate into the mental health and helping professions, focusing on clinical psychology, counseling, and psychological well-being.",
+      "steps": [
+        {
+          "stage": "Class 12 Completion",
+          "title": "Choose Undergraduate Specialization",
+          "detail": "Apply for a Bachelor of Arts (BA) or Bachelor of Science (BSc) in Psychology from a recognized Indian university. Ensure the institution offers foundational training in developmental, cognitive, and abnormal psychology.",
+          "requirement": "Class 12 pass in any stream with minimum 50-60% aggregate marks depending on college cutoffs."
+        },
+        {
+          "stage": "Undergraduate Years (Years 1-3)",
+          "title": "Build Academic Foundation & Soft Skills",
+          "detail": "Focus on core psychology papers, statistics, and research methodology during your graduation. Actively seek volunteering opportunities with NGOs, mental health helplines, or hospitals to build practical empathy and communication skills.",
+          "requirement": "Maintain a strong CGPA and complete at least one summer internship."
+        },
+        {
+          "stage": "Post-Graduation Entrance",
+          "title": "Prepare for Master's Entrance Exams",
+          "detail": "Target top-tier institutions like NIMHANS, TISS, Delhi University, and Christ University for a Master's degree. A Master's in Clinical Psychology or Counseling Psychology is mandatory for professional practice in India.",
+          "requirement": "Bachelor's degree in Psychology or relevant stream."
+        },
+        {
+          "stage": "Post-Graduation Years (Years 4-5)",
+          "title": "Complete Master's Degree & Specialized Training",
+          "detail": "Pursue your MA or MSc in Psychology, focusing heavily on supervised clinical practica and psychotherapy techniques. Learn standardized psychological testing and diagnostic frameworks.",
+          "requirement": "Clear undergraduate degree with required entrance exam scores."
+        },
+        {
+          "stage": "Post Post-Graduation",
+          "title": "RCI Licensure or Advanced Internship",
+          "detail": "If aiming to be a licensed Clinical Psychologist, pursue an M.Phil in Clinical Psychology approved by the Rehabilitation Council of India (RCI). Alternatively, start supervised practice as a counseling psychologist.",
+          "requirement": "Master's degree in Psychology."
+        }
+      ],
+      "examsToWatch": [
+        "CUET-PG",
+        "TISSNET",
+        "NIMHANS Entrance Exam",
+        "Christ University Entrance Test"
+      ],
+      "commonMistake": "Believing a general BA/BSc in Psychology alone is enough to start a clinical practice without pursuing a mandatory Master's degree and proper supervised internships."
+    },
+    "fwd:12th:computers & tech": {
+      "title": "B.Tech in Computer Science & Engineering",
+      "summary": "Pursuing a Bachelor of Technology in Computer Science is the premier and most structured pathway for tech enthusiasts in India, leading to high-demand roles in software development, AI, and cybersecurity.",
+      "steps": [
+        {
+          "stage": "Class 12 Completion & Prep",
+          "title": "Focus on Entrance Exams",
+          "detail": "If you have Physics, Chemistry, and Mathematics (PCM), intensely prepare for national and state-level engineering entrance exams over the next few months.",
+          "requirement": "PCM stream in Class 12 with a minimum of 60-75% aggregate marks."
+        },
+        {
+          "stage": "April - May",
+          "title": "Appear for JEE Main & State CETs",
+          "detail": "Take JEE Main for NITs, IIITs, and central/private universities, along with state CETs (like MHT-CET, KCET, or COMEDK) to secure admissions into top engineering colleges.",
+          "requirement": "Valid scorecards in respective entrance tests."
+        },
+        {
+          "stage": "June - July",
+          "title": "JoSAA / CSAB / State Counselling",
+          "detail": "Participate in centralized counselling processes based on your ranks to lock in Computer Science and Engineering (CSE) or specialized branches like AI/ML.",
+          "requirement": "Counselling registration and document verification."
+        },
+        {
+          "stage": "Years 1 - 2 (College)",
+          "title": "Master Fundamentals & Coding",
+          "detail": "Build a rock-solid foundation in Data Structures, Algorithms (DSA), Object-Oriented Programming, and Database Management Systems while actively contributing to GitHub.",
+          "requirement": "Consistent daily coding practice on platforms like LeetCode or CodeChef."
+        },
+        {
+          "stage": "Year 3 (College)",
+          "title": "Internships & Specialization",
+          "detail": "Secure summer internships in software engineering, web development, or data science. Choose electives aligned with your specific interest, such as Cloud Computing or Cyber Security.",
+          "requirement": "Strong resume and a portfolio of at least 2-3 substantial projects."
+        },
+        {
+          "stage": "Year 4 (College)",
+          "title": "Campus Placements or Higher Studies",
+          "detail": "Sit for campus recruitment drives or prepare for GATE/GRE if you intend to pursue an M.Tech or MS abroad. Convert your internship into a full-time Full-Stack or Software Engineer role.",
+          "requirement": "Graduation degree with zero active backlogs."
+        }
+      ],
+      "examsToWatch": [
+        "JEE Main",
+        "JEE Advanced",
+        "BITSAT",
+        "COMEDK UGET",
+        "MHT-CET",
+        "CUET"
+      ],
+      "commonMistake": "Chasing college brand name over branch; settling for a non-tech branch in a top-tier IIT/NIT when your passion is strictly coding is often less rewarding than studying CSE at a Tier-2 institution with an active tech ecosystem."
+    },
+    "fwd:12th:not sure yet": {
+      "title": "General Undergraduate via CUET",
+      "summary": "Since your interests are still undecided, pursuing a flexible general bachelor's degree via the Common University Entrance Test (CUET) allows you to explore diverse subjects and discover your passion before committing to a specialization.",
+      "steps": [
+        {
+          "stage": "Class 12 Completion",
+          "title": "Analyze Results and Research Streams",
+          "detail": "Review your Class 12 board marks across subjects to understand your academic strengths. Research multidisciplinary degree options such as Bachelor of Arts (BA), Bachelor of Commerce (BCom), or Bachelor of Science (BSc) offered by central and top state universities.",
+          "requirement": "Minimum passing percentage in Class 12 from a recognized board"
+        },
+        {
+          "stage": "May - June (Immediate)",
+          "title": "Appear for CUET and State Entrance Exams",
+          "detail": "Take the Common University Entrance Test (CUET-UG) to secure admissions into prestigious central universities like Delhi University, JNU, and BHU. Concurrently, apply to reputable local colleges that admit students based on Class 12 board merit.",
+          "requirement": "CUET-UG registration and admit card"
+        },
+        {
+          "stage": "June - July",
+          "title": "University Counselling and Course Selection",
+          "detail": "Participate in university counselling portals like CSAS for Delhi University. Choose a flexible degree program or a liberal arts curriculum that permits multidisciplinary electives so you can sample economics, psychology, literature, or basic sciences.",
+          "requirement": "CUET scorecards and counseling registration fee"
+        },
+        {
+          "stage": "Year 1 - Year 2 (Undergraduate)",
+          "title": "Explore Core Subjects and Build Soft Skills",
+          "detail": "Attend classes across various disciplines, join college societies, and take up internships or part-time volunteering roles. Use these two years to identify which specific domains or corporate sectors genuinely spark your interest.",
+          "requirement": "Consistent college attendance and passing semester exams"
+        },
+        {
+          "stage": "Year 3 (Undergraduate)",
+          "title": "Choose Specialization or Prepare for Post-Graduation",
+          "detail": "Depending on the National Education Policy (NEP) 4-year undergraduate structure, either choose a major specialization track or complete your 3-year degree. Prepare for higher education entrance exams (like CAT, UPSC, or MA entrances) or enter the job market based on your discovered interests.",
+          "requirement": "Maintaining a competitive cumulative grade point average (CGPA)"
+        }
+      ],
+      "examsToWatch": [
+        "CUET-UG",
+        "IPU-CET",
+        "NPAT",
+        "SET"
+      ],
+      "commonMistake": "Choosing a degree solely based on peer pressure or high cut-offs without checking the actual syllabus, leading to lack of motivation and poor career clarity down the line."
+    },
+    "cmp:b.sc|b.tech|bca": {
+      "title": "B.Tech vs B.Sc vs BCA",
+      "summary": "These three undergraduate paths serve very different career trajectories in India. B.Tech is a professional engineering degree with strong campus recruitment potential, B.Sc is an academic science degree focused on foundational theory often requiring further studies, and BCA is a practical application-focused IT degree that sits between B.Sc and B.Tech for software careers.",
+      "items": [
+        {
+          "name": "B.Tech",
+          "fullName": "Bachelor of Technology",
+          "kind": "degree",
+          "duration": "4 years",
+          "eligibility": "Science stream (PCM) with minimum 50-60% aggregate in Class 12",
+          "entranceExams": [
+            "JEE Main",
+            "JEE Advanced",
+            "State CETs",
+            "University specific tests"
+          ],
+          "studyFocus": "Rigorous engineering theory coupled with practical labs, coding, and engineering mathematics, varying heavily by college tier.",
+          "startingSalary": "3-8 LPA (Tier-3 to Tier-1 colleges)",
+          "experiencedSalary": "12-28 LPA",
+          "topRoles": [
+            "Software Engineer",
+            "Core Engineer",
+            "Data Analyst",
+            "Product Developer"
+          ],
+          "higherStudies": "M.Tech or MBA",
+          "bestFor": "Students deeply interested in technology, problem-solving, and engineering with strong mathematical aptitude.",
+          "watchOut": "Extreme competition and poor placement outcomes in thousands of sub-par private engineering colleges across India."
+        },
+        {
+          "name": "B.Sc",
+          "fullName": "Bachelor of Science",
+          "kind": "degree",
+          "duration": "3 years",
+          "eligibility": "Science stream (PCM or PCB) with 50% aggregate in Class 12",
+          "entranceExams": [
+            "CUET",
+            "State University Entrance Exams"
+          ],
+          "studyFocus": "In-depth academic study of core pure sciences like Physics, Chemistry, Mathematics, or Biology, with emphasis on scientific theory and research methodologies.",
+          "startingSalary": "2.5-4.5 LPA",
+          "experiencedSalary": "6-12 LPA",
+          "topRoles": [
+            "Lab Technician",
+            "Research Assistant",
+            "Junior Data Analyst",
+            "Science Teacher"
+          ],
+          "higherStudies": "M.Sc, Integrated Ph.D, or MCA",
+          "bestFor": "Students inclined toward academic research, pure sciences, and higher studies rather than immediate corporate jobs.",
+          "watchOut": "Very limited direct job opportunities after graduation; an M.Sc or specialized professional post-graduation is almost mandatory for decent growth."
+        },
+        {
+          "name": "BCA",
+          "fullName": "Bachelor of Computer Applications",
+          "kind": "degree",
+          "duration": "3 years",
+          "eligibility": "Any stream (Science, Commerce, or Arts) with Mathematics or Computer Science preferred, 45-50% in Class 12",
+          "entranceExams": [
+            "CUET",
+            "IPU CET",
+            "State BCA Entrances"
+          ],
+          "studyFocus": "Practical software development, programming languages, database management, web technologies, and basic computer networking.",
+          "startingSalary": "2.5-5 LPA",
+          "experiencedSalary": "8-18 LPA",
+          "topRoles": [
+            "Software Developer",
+            "System Administrator",
+            "Web Developer",
+            "Junior Programmer"
+          ],
+          "higherStudies": "MCA",
+          "bestFor": "Students from non-science backgrounds or those who want a shorter, application-oriented route into IT without rigorous engineering math.",
+          "watchOut": "Top tech product companies often show a preference for B.Tech/MCA graduates, sometimes creating a glass ceiling for standalone BCA holders in early hiring."
+        }
+      ],
+      "verdict": "Choose B.Tech if you want a direct, structured engineering career and have the PCM background for entrance exams. Choose BCA if you want to enter the software and IT sector quickly, especially if you did not study Physics or Advanced Math in Class 12. Choose B.Sc only if your ultimate goal is academic research, teaching, or higher scientific studies rather than an immediate corporate paycheck."
+    },
+    "cmp:b.com|bba": {
+      "title": "B.Com vs BBA: Traditional Commerce vs Management Studies",
+      "summary": "B.Com is a foundational, accounting-heavy degree best suited for students aiming for finance, taxation, or professional certifications like CA and CS. BBA focuses on broader business administration, organizational behavior, and early management concepts, making it a stepping stone toward corporate roles or an MBA.",
+      "items": [
+        {
+          "name": "B.Com",
+          "fullName": "Bachelor of Commerce",
+          "kind": "degree",
+          "duration": "3 or 4 years",
+          "eligibility": "Class 12 in any stream (Commerce preferred), typically 50%+ marks",
+          "entranceExams": [
+            "CUET",
+            "University-specific entrance tests"
+          ],
+          "studyFocus": "Financial accounting, corporate tax, cost accounting, auditing, business law, and economics.",
+          "startingSalary": "2.5-4.5 LPA",
+          "experiencedSalary": "7-14 LPA",
+          "topRoles": [
+            "Accountant",
+            "Junior Auditor",
+            "Tax Consultant",
+            "Financial Analyst"
+          ],
+          "higherStudies": "M.Com, MBA, CA, CS, CMA, CFA",
+          "bestFor": "Students strong in numbers who want a structured path into accounting, taxation, or banking, often alongside professional qualifications.",
+          "watchOut": "A plain B.Com from an average college offers very limited job prospects without a simultaneous professional certification or higher studies."
+        },
+        {
+          "name": "BBA",
+          "fullName": "Bachelor of Business Administration",
+          "kind": "degree",
+          "duration": "3 or 4 years",
+          "eligibility": "Class 12 in any stream, typically 50%+ marks",
+          "entranceExams": [
+            "CUET",
+            "IPMAT",
+            "NPAT",
+            "SET",
+            "UGAT"
+          ],
+          "studyFocus": "Principles of management, marketing strategies, human resource management, organizational behavior, and basic corporate finance.",
+          "startingSalary": "3-6 LPA",
+          "experiencedSalary": "9-18 LPA",
+          "topRoles": [
+            "Management Trainee",
+            "Business Development Executive",
+            "Marketing Associate",
+            "HR Executive"
+          ],
+          "higherStudies": "MBA, PGDM, Master in Management",
+          "bestFor": "Outgoing students interested in leadership, marketing, or general corporate operations who plan to pursue an MBA later.",
+          "watchOut": "BBA curriculum can sometimes be repetitive or superficial, and top-tier placement packages are heavily restricted to elite institutes like IIMs or premier private universities."
+        }
+      ],
+      "verdict": "Choose B.Com if your immediate goal is to master technical finance, accounting, or pursue professional credentials like CA/CMA. Choose BBA if you prefer studying broad business functions, enjoy presentations and project management, and view an MBA as your primary long-term goal."
+    },
+    "cmp:bds|mbbs": {
+      "title": "MBBS vs BDS: Medical Careers After Class 12",
+      "summary": "MBBS and BDS are both prestigious medical degrees pursued after Class 12 Science (PCB), but they lead to very different professional realities in India. While MBBS provides a broad medical foundation with high general employability and diverse career paths, BDS restricts you primarily to dentistry, where setting up an independent private clinic requires significant capital and patience.",
+      "items": [
+        {
+          "name": "MBBS",
+          "fullName": "Bachelor of Medicine and Bachelor of Surgery",
+          "kind": "degree",
+          "duration": "5.5 years (including 1-year internship)",
+          "eligibility": "Class 12 Science (Physics, Chemistry, Biology) with minimum 50% aggregate and passing marks in English",
+          "entranceExams": [
+            "NEET-UG"
+          ],
+          "studyFocus": "Comprehensive study of human anatomy, physiology, pathology, pharmacology, medicine, surgery, and clinical rotations in hospitals.",
+          "startingSalary": "6-10 LPA",
+          "experiencedSalary": "15-30 LPA",
+          "topRoles": [
+            "General Practitioner",
+            "Medical Officer",
+            "Junior Resident",
+            "Clinical Researcher"
+          ],
+          "higherStudies": "MD, MS, DNB, or Fellowship specializations",
+          "bestFor": "Students with immense stamina, high dedication to patient care, and the patience for long-term rigorous study and residency.",
+          "watchOut": "Extremely high competition to clear NEET, grueling work hours during residency, and delayed financial independence well into your late twenties."
+        },
+        {
+          "name": "BDS",
+          "fullName": "Bachelor of Dental Surgery",
+          "kind": "degree",
+          "duration": "5 years (including 1-year internship)",
+          "eligibility": "Class 12 Science (Physics, Chemistry, Biology) with minimum 50% aggregate and passing marks in English",
+          "entranceExams": [
+            "NEET-UG"
+          ],
+          "studyFocus": "Focused study of dental and oral anatomy, pathology, dental materials, orthodontics, oral surgery, and hands-on clinical dental procedures.",
+          "startingSalary": "3-6 LPA",
+          "experiencedSalary": "8-18 LPA",
+          "topRoles": [
+            "Dentist",
+            "Dental Surgeon",
+            "Consultant Orthodontist",
+            "Dental Clinic Owner"
+          ],
+          "higherStudies": "MDS (Master of Dental Surgery)",
+          "bestFor": "Students passionate about oral healthcare, manual dexterity in surgical procedures, and a slightly more predictable schedule than MBBS.",
+          "watchOut": "Saturation in urban dental clinics makes establishing a private practice expensive and difficult, with low starting salaries for fresh graduates."
+        }
+      ],
+      "verdict": "Choose MBBS if your goal is general medical practice, hospital employment, or high-demand surgical specializations, accepting the intense competition and long study timeline. Choose BDS only if you have a specific passion for dentistry, are prepared to invest in your own clinic or work on commission, and prefer a slightly faster route into healthcare than MBBS."
+    },
+    "cmp:b.a|b.com": {
+      "title": "B.A vs B.Com after Class 12",
+      "summary": "B.A offers broad exploration in humanities and social sciences, making it versatile for civil services, media, and academia, whereas B.Com provides a structured pathway into corporate finance, accounting, and business roles. Choosing between them depends on whether your strengths lie in critical thinking and writing, or numerical analysis and commerce.",
+      "items": [
+        {
+          "name": "B.A",
+          "fullName": "Bachelor of Arts",
+          "kind": "degree",
+          "duration": "3-4 years",
+          "eligibility": "Pass in Class 12 from any stream (Science, Commerce, or Arts) with generally 45-50% aggregate marks",
+          "entranceExams": [
+            "CUET",
+            "University-specific entrance tests"
+          ],
+          "studyFocus": "You study subjects like literature, history, political science, sociology, or psychology, focusing on essay writing, critical analysis, and research.",
+          "startingSalary": "2-4 LPA",
+          "experiencedSalary": "6-12 LPA",
+          "topRoles": [
+            "Content Writer",
+            "Journalist",
+            "HR Executive",
+            "Civil Services Aspirant"
+          ],
+          "higherStudies": "M.A, B.Ed, MBA, or LLB",
+          "bestFor": "Students interested in literature, social sciences, writing, or preparing for competitive exams like UPSC who want flexibility.",
+          "watchOut": "Limited direct campus placements for general B.A graduates; often requires higher studies or specialized skill-building to get well-paying roles."
+        },
+        {
+          "name": "B.Com",
+          "fullName": "Bachelor of Commerce",
+          "kind": "degree",
+          "duration": "3-4 years",
+          "eligibility": "Pass in Class 12, preferably with Commerce stream (Accounts/Maths), though Science and Arts students are also eligible with higher cut-offs",
+          "entranceExams": [
+            "CUET",
+            "DU JAT or college-specific exams"
+          ],
+          "studyFocus": "You study accounting, taxation, corporate law, economics, and finance, focusing on financial statements, tally, and business mathematics.",
+          "startingSalary": "2.5-5 LPA",
+          "experiencedSalary": "7-15 LPA",
+          "topRoles": [
+            "Accountant",
+            "Audit Assistant",
+            "Financial Analyst",
+            "Tax Consultant"
+          ],
+          "higherStudies": "M.Com, MBA, CA, CFA, or CS",
+          "bestFor": "Students with an aptitude for numbers, business, and finance who want a clear entry point into the corporate or banking sector.",
+          "watchOut": "High competition for entry-level accounting roles, and a standard B.Com without professional certifications (like CA, ACCA, or MBA) can hit a career growth ceiling early."
+        }
+      ],
+      "verdict": "Choose B.Com if you are inclined toward numbers, accounting, and corporate finance, and want a more straightforward path to corporate employment. Choose B.A if your interests lie in humanities, social sciences, or creative fields, and you are willing to invest in post-graduation or specialized skills to build your career."
+    },
+    "cmp:b.tech|mbbs": {
+      "title": "B.Tech vs MBBS",
+      "summary": "B.Tech is a four-year technical degree offering rapid entry into the corporate workforce with diverse career trajectories in engineering and tech. MBBS is a rigorous five-and-a-half-year medical journey demanding intense dedication, leading to a secure and highly respected career as a doctor, though with a delayed start to earning.",
+      "items": [
+        {
+          "name": "B.Tech",
+          "fullName": "Bachelor of Technology",
+          "kind": "degree",
+          "duration": "4 years",
+          "eligibility": "Class 12 with Physics, Chemistry, and Mathematics (PCM), minimum 50-60% aggregate depending on the institution",
+          "entranceExams": [
+            "JEE Main",
+            "JEE Advanced",
+            "BITSAT",
+            "State CETs"
+          ],
+          "studyFocus": "Engineering mathematics, programming, core branch fundamentals (like computer science, mechanical, or electronics), and project work.",
+          "startingSalary": "3.5-8 LPA (Tier-3 colleges may see 3-4 LPA, while Tier-1/2 range from 8-15 LPA)",
+          "experiencedSalary": "12-25 LPA",
+          "topRoles": [
+            "Software Engineer",
+            "Data Analyst",
+            "Core Engineer",
+            "Product Manager"
+          ],
+          "higherStudies": "M.Tech or MBA",
+          "bestFor": "Students strong in mathematics and logic who want to enter the tech or corporate sector quickly.",
+          "watchOut": "Extreme market competition for entry-level IT roles and the necessity to continuously upskill to remain relevant."
+        },
+        {
+          "name": "MBBS",
+          "fullName": "Bachelor of Medicine and Bachelor of Surgery",
+          "kind": "degree",
+          "duration": "5.5 years including 1-year mandatory internship",
+          "eligibility": "Class 12 with Physics, Chemistry, and Biology (PCB), minimum 50% aggregate for general category",
+          "entranceExams": [
+            "NEET-UG"
+          ],
+          "studyFocus": "Human anatomy, physiology, pathology, pharmacology, clinical rotations, and hands-on patient care in hospitals.",
+          "startingSalary": "6-10 LPA (Post internship as a junior resident or medical officer)",
+          "experiencedSalary": "15-30 LPA (Significantly higher after completing post-graduation or specialization)",
+          "topRoles": [
+            "General Practitioner",
+            "Junior Resident",
+            "Medical Officer",
+            "Clinical Researcher"
+          ],
+          "higherStudies": "MD, MS, or DNB",
+          "bestFor": "Students with high patience, emotional resilience, and a deep dedication to biological sciences and healing.",
+          "watchOut": "Extremely high academic pressure, long work hours, delayed financial independence, and the absolute necessity of clearing NEET-PG for career progression."
+        }
+      ],
+      "verdict": "Choose B.Tech if you prefer faster financial independence, flexibility across industries, and problem-solving through code or machines. Choose MBBS if you are certain about a lifelong calling in healthcare, willing to commit over a decade to education and training, and value long-term job stability."
+    },
+    "cmp:b.sc|bca": {
+      "title": "BCA vs B.Sc",
+      "summary": "BCA is a professional, application-oriented undergraduate course focused directly on software development and IT applications. A traditional B.Sc is an academic and theoretical science degree that deepens fundamental knowledge in a specific scientific discipline, often requiring further specialization like an MCA or M.Sc for strong career outcomes.",
+      "items": [
+        {
+          "name": "BCA",
+          "fullName": "Bachelor of Computer Applications",
+          "kind": "degree",
+          "duration": "3 years",
+          "eligibility": "Pass in Class 12 from any stream (Science, Commerce, or Arts) with Mathematics usually preferred, minimum 45-50% marks.",
+          "entranceExams": [
+            "CUET",
+            "IPU CET",
+            "SET",
+            "State-level BCA entrance exams"
+          ],
+          "studyFocus": "You study programming languages like Java and Python, database management, web development, software engineering, and networking. Day-to-day work involves writing code, building software projects, and debugging.",
+          "startingSalary": "2.5-5 LPA",
+          "experiencedSalary": "8-15 LPA",
+          "topRoles": [
+            "Software Developer",
+            "Web Developer",
+            "System Analyst",
+            "Junior Programmer"
+          ],
+          "higherStudies": "MCA, MBA, or specialized PG Diplomas",
+          "bestFor": "Students from any stream who are dead set on entering the software and IT industry right after graduation without taking a pure science route.",
+          "watchOut": "Tier-3 BCA graduates often struggle to compete with B.Tech/B.E. graduates for core software engineering roles without strong self-taught coding skills and portfolio projects."
+        },
+        {
+          "name": "B.Sc",
+          "fullName": "Bachelor of Science",
+          "kind": "degree",
+          "duration": "3 or 4 years (as per NEP)",
+          "eligibility": "Pass in Class 12 from Science stream (PCM/PCB) with minimum 50% marks, depending on the chosen specialization.",
+          "entranceExams": [
+            "CUET",
+            "NEST",
+            "IIT JAM (for later)",
+            "State university entrance tests"
+          ],
+          "studyFocus": "You focus heavily on theoretical and experimental aspects of pure or applied sciences like Physics, Chemistry, Mathematics, Botany, Zoology, or Computer Science. Day-to-day involves attending lectures, solving complex mathematical or scientific problems, and conducting laboratory experiments.",
+          "startingSalary": "2-4 LPA",
+          "experiencedSalary": "6-12 LPA",
+          "topRoles": [
+            "Research Assistant",
+            "Lab Technician",
+            "Data Analyst",
+            "Quality Control Inspector"
+          ],
+          "higherStudies": "M.Sc, Integrated Ph.D, MCA, or MBA",
+          "bestFor": "Students with a genuine curiosity for scientific research, academic inquiry, or those planning to clear exams like CSIR-NET or UPSC later.",
+          "watchOut": "A basic B.Sc degree alone has limited direct employment value in the corporate market; higher studies or additional professional certifications are almost always necessary for decent pay."
+        }
+      ],
+      "verdict": "Choose BCA if your immediate goal is to work in the IT sector, write software, and start earning early with a vocational tech qualification. Choose B.Sc if you want a deep academic foundation in core sciences, intend to pursue postgraduate research, or want to pivot into specialized scientific domains."
+    },
+    "cmp:b.tech|polytechnic diploma": {
+      "title": "Polytechnic Diploma vs B.Tech",
+      "summary": "Polytechnic Diploma is a 3-year skill-oriented technical course meant for early entry into the workforce or lateral entry into engineering degrees. B.Tech is a comprehensive 4-year professional engineering degree focused on deep theoretical and practical design, making it the standard qualification for corporate tech roles.",
+      "items": [
+        {
+          "name": "Polytechnic Diploma",
+          "fullName": "Diploma in Engineering",
+          "kind": "diploma",
+          "duration": "3 years",
+          "eligibility": "Class 10 pass with minimum 35-50% marks (or Class 12 Science for direct second year)",
+          "entranceExams": [
+            "JEECUP",
+            "AP POLYCET",
+            "TS POLYCET",
+            "State Polytechnic Entrance Exams"
+          ],
+          "studyFocus": "Focuses on hands-on technical shop-floor skills, basic engineering drawings, lab work, and trade-specific practical training.",
+          "startingSalary": "1.5-3 LPA",
+          "experiencedSalary": "4-8 LPA",
+          "topRoles": [
+            "Junior Engineer",
+            "Technician",
+            "Maintenance Supervisor",
+            "CAD Draftsman"
+          ],
+          "higherStudies": "B.Tech via Lateral Entry (Directly to 2nd year)",
+          "bestFor": "Students wanting early employment, hands-on mechanical/electrical work, or facing financial constraints after Class 10.",
+          "watchOut": "Growth is slower and corporate entry-barrier is high without completing a B.Tech later."
+        },
+        {
+          "name": "B.Tech",
+          "fullName": "Bachelor of Technology",
+          "kind": "degree",
+          "duration": "4 years",
+          "eligibility": "Class 12 Science (Physics, Chemistry, Mathematics) with minimum 45-60% marks",
+          "entranceExams": [
+            "JEE Main",
+            "JEE Advanced",
+            "BITSAT",
+            "State CETs"
+          ],
+          "studyFocus": "Involves advanced mathematics, core engineering theory, software coding, project development, and analytical problem-solving.",
+          "startingSalary": "3-7 LPA (Mass recruiters to Tier-2 colleges; 8-15 LPA for Tier-1)",
+          "experiencedSalary": "12-25 LPA",
+          "topRoles": [
+            "Software Engineer",
+            "Design Engineer",
+            "Data Analyst",
+            "Product Engineer"
+          ],
+          "higherStudies": "M.Tech or MBA",
+          "bestFor": "Students strong in mathematics and physics who want broad corporate placement opportunities and higher initial pay.",
+          "watchOut": "Extremely high competition and variable quality among thousands of private engineering colleges in India."
+        }
+      ],
+      "verdict": "Choose a Polytechnic Diploma if you need to start earning quickly after Class 10 or prefer practical shop-floor work over academic theory. Choose B.Tech if you have completed Class 12 with Science, can afford 4 years of focused study, and aim for corporate engineering, IT, or core R&D roles."
+    },
+    "cmp:chartered accountant|mba": {
+      "title": "Chartered Accountant vs MBA",
+      "summary": "Chartered Accountant is a rigorous professional qualification focused strictly on accounting, taxation, and auditing, built through self-study and practical articleship with lower upfront college costs. An MBA is a broader management degree usually pursued after graduation, requiring significant investment for a campus placement that accelerates corporate leadership and general management roles.",
+      "items": [
+        {
+          "name": "Chartered Accountant",
+          "fullName": "Chartered Accountant (ICAI)",
+          "kind": "career",
+          "duration": "4-5 years",
+          "eligibility": "Pass Class 12 from any stream (Science/Commerce/Arts) with at least 50% aggregate",
+          "entranceExams": [
+            "CA Foundation"
+          ],
+          "studyFocus": "You study complex taxation, corporate laws, financial management, and auditing while balancing mandatory practical training (articleship) under practicing CAs.",
+          "startingSalary": "6-9 LPA",
+          "experiencedSalary": "15-25 LPA",
+          "topRoles": [
+            "Tax Consultant",
+            "Auditor",
+            "Financial Controller",
+            "Chief Financial Officer"
+          ],
+          "higherStudies": "Information Systems Audit (DISA), CPA, or CFA",
+          "bestFor": "Disciplined, detail-oriented students with high patience who want deep technical financial expertise without a hefty college fee.",
+          "watchOut": "Extremely low pass percentages in intermediate and final exams can lead to multiple attempts and prolonged study cycles."
+        },
+        {
+          "name": "MBA",
+          "fullName": "Master of Business Administration",
+          "kind": "degree",
+          "duration": "2 years (requires prior graduation)",
+          "eligibility": "Graduation in any stream with a minimum of 50% marks, followed by management entrance tests",
+          "entranceExams": [
+            "CAT",
+            "XAT",
+            "MAT",
+            "SNAP",
+            "CMAT"
+          ],
+          "studyFocus": "You engage in case studies, group projects, and internships covering marketing, finance, operations, and human resources, with a heavy emphasis on networking and presentations.",
+          "startingSalary": "6-15 LPA (varies massively by B-school tier; top IIMs offer much higher, Tier-2/3 offer less)",
+          "experiencedSalary": "20-45 LPA",
+          "topRoles": [
+            "Management Consultant",
+            "Brand Manager",
+            "Investment Banker",
+            "Product Manager"
+          ],
+          "higherStudies": "Executive MBA, Ph.D., or specialized certifications",
+          "bestFor": "Extroverted, ambitious graduates who thrive in fast-paced corporate environments and want to transition into general management or strategy.",
+          "watchOut": "Doing an MBA from a Tier-3 or mediocre college often results in poor placements and heavy education debt."
+        }
+      ],
+      "verdict": "Choose Chartered Accountant if you prefer a direct, cost-effective, and deeply technical financial path starting right after Class 12 through rigorous exams and articleship. Choose the MBA route if you prefer completing a general undergraduate degree first, building interpersonal and leadership skills, and targeting high-end corporate strategy or management roles through a top business school."
+    },
+    "cmp:b.arch|b.des": {
+      "title": "B.Des vs B.Arch",
+      "summary": "B.Des focuses on creative problem-solving, digital products, UI/UX, fashion, and industrial design with fewer regulatory hurdles, while B.Arch is a professional degree heavily regulated by the Council of Architecture focused strictly on buildings, urban planning, and structural design. B.Arch is structurally longer and requires technical drawing and physics, whereas B.Des is more adaptable across modern tech and lifestyle industries.",
+      "items": [
+        {
+          "name": "B.Des",
+          "fullName": "Bachelor of Design",
+          "kind": "degree",
+          "duration": "4 years",
+          "eligibility": "Pass in Class 12 from any stream (Science, Commerce, or Arts) with typically 50% aggregate",
+          "entranceExams": [
+            "UCEED",
+            "NID DAT",
+            "NIFT",
+            "CEED"
+          ],
+          "studyFocus": "You study user research, prototyping, visual communication, ergonomics, material studies, and software like Figma, Adobe Creative Suite, or CAD depending on your specialization.",
+          "startingSalary": "4-8 LPA (Tier-1 institutes go higher; tier-3 colleges may start at 2.5-4 LPA)",
+          "experiencedSalary": "12-24 LPA",
+          "topRoles": [
+            "UI/UX Designer",
+            "Product Designer",
+            "Graphic Designer",
+            "Fashion Designer"
+          ],
+          "higherStudies": "M.Des",
+          "bestFor": "Students with strong visual aesthetics, empathy for users, sketching skills, and an interest in digital products, lifestyle, or media.",
+          "watchOut": "Portfolio matters more than the college degree itself; poorly recognized private design colleges often charge high fees with weak placement support."
+        },
+        {
+          "name": "B.Arch",
+          "fullName": "Bachelor of Architecture",
+          "kind": "degree",
+          "duration": "5 years",
+          "eligibility": "Pass in Class 12 with Physics, Chemistry, and Mathematics (PCM) or 10+3 Diploma with Mathematics, with a valid NATA score",
+          "entranceExams": [
+            "NATA",
+            "JEE Main Paper 2"
+          ],
+          "studyFocus": "You study architectural design, building construction technology, structural mechanics, history of architecture, environmental services, and drafting tools like AutoCAD and Revit.",
+          "startingSalary": "3-6 LPA",
+          "experiencedSalary": "9-18 LPA",
+          "topRoles": [
+            "Architect",
+            "Urban Planner",
+            "Interior Designer",
+            "Project Manager"
+          ],
+          "higherStudies": "M.Arch",
+          "bestFor": "Students who combine artistic spatial visualization with strong technical aptitude in mathematics and physics, and want a legally protected professional title.",
+          "watchOut": "The initial years of practice involve long working hours, high stress, and relatively low starting salaries compared to the 5-year academic grind."
+        }
+      ],
+      "verdict": "Choose B.Des if you want a faster route into the tech, product, or lifestyle industries with diverse creative career tracks. Choose B.Arch if you are deeply passionate about physical structures, urban spaces, and are committed to completing a rigorous 5-year technical professional program."
+    },
+    "cmp:bba|llb": {
+      "title": "LLB vs BBA",
+      "summary": "Choosing between LLB and BBA represents a choice between professional legal practice and corporate management. While BBA targets corporate entry-level roles and MBA pathways, LLB opens doors to legal advocacy, corporate advisory, and judiciary services.",
+      "items": [
+        {
+          "name": "LLB",
+          "fullName": "Bachelor of Laws (integrated 5-year BA LLB / BBA LLB is standard after Class 12)",
+          "kind": "degree",
+          "duration": "5 years",
+          "eligibility": "Pass in Class 12 from any stream (Science, Commerce, Arts) with generally 45-50% aggregate marks",
+          "entranceExams": [
+            "CLAT",
+            "AILET",
+            "MH CET Law",
+            "LSAT India"
+          ],
+          "studyFocus": "You study constitutional law, criminal law, contracts, corporate law, civil procedure, and engage in moot court exercises and internships.",
+          "startingSalary": "3-6 LPA (significantly higher at top law firms like tier-1 corporate firms, starting at 12-15 LPA)",
+          "experiencedSalary": "12-25 LPA",
+          "topRoles": [
+            "Corporate Associate",
+            "Litigation Lawyer",
+            "Legal Advisor",
+            "Compliance Officer"
+          ],
+          "higherStudies": "LLM",
+          "bestFor": "Students with strong reading and articulation skills who enjoy advocacy, debate, and detailed analytical reading.",
+          "watchOut": "Initial years in litigation offer very low stipends/income, and corporate law requires grueling working hours."
+        },
+        {
+          "name": "BBA",
+          "fullName": "Bachelor of Business Administration",
+          "kind": "degree",
+          "duration": "3 years",
+          "eligibility": "Pass in Class 12 from any stream (Commerce/Arts/Science) with 50% aggregate marks",
+          "entranceExams": [
+            "CUET",
+            "IPU CET",
+            "NPAT",
+            "SET"
+          ],
+          "studyFocus": "You study business fundamentals including marketing, finance, human resources, organizational behavior, and basic economics through case studies and projects.",
+          "startingSalary": "3-5 LPA (varies widely based on B-school tier; top tier colleges offer 6-9 LPA)",
+          "experiencedSalary": "10-18 LPA",
+          "topRoles": [
+            "Management Trainee",
+            "Business Analyst",
+            "Marketing Executive",
+            "Operations Associate"
+          ],
+          "higherStudies": "MBA",
+          "bestFor": "Students inclined toward general business management, corporate strategy, and entrepreneurship who plan to do an MBA later.",
+          "watchOut": "A standalone BBA from a tier-3 college often yields poor entry-level placements, making an MBA almost mandatory for career growth."
+        }
+      ],
+      "verdict": "Choose LLB if you are passionate about the legal system, possess strong reading stamina, and want a protected professional degree. Choose BBA if you view a bachelor's degree primarily as a stepping stone toward an MBA and want to enter the corporate management track early."
+    }
+  }
+}
