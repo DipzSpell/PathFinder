@@ -49,6 +49,18 @@ export default function Privacy() {
           browser settings. Nothing breaks if you do — results are simply regenerated on demand.
         </p>
         <ClearCacheButton />
+        <p>
+          Roadmaps you choose to <strong className="text-ink font-medium">save</strong>, and the
+          milestones you tick off on them, are kept in the same local storage until you remove
+          them from the Saved page. Your language and light/dark choice are remembered there
+          too. None of it leaves your device.
+        </p>
+        <p>
+          A <strong className="text-ink font-medium">share link</strong> carries the roadmap
+          itself inside the link, after the <code className="font-mono text-sm">#</code>. That
+          part of a web address is never sent to our server, so nothing is uploaded when you
+          share — but anyone you give the link to can read the roadmap in it.
+        </p>
       </Section>
 
       <Section title="Information we collect automatically">

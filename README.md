@@ -13,6 +13,13 @@ You can use it in two ways:
 
 There's also a compare page if you're stuck between two options, like B.Tech vs BCA or Diploma vs 12th.
 
+Every roadmap is drawn as an actual road, from where you are now to the destination. You can also:
+
+- **Save it** on your device and tick off milestones as you clear them (no account needed).
+- **Share it** as a link or on WhatsApp. The roadmap travels inside the link, so nothing gets uploaded.
+- **Switch to Hindi**, both the site and the roadmap itself.
+- **Use dark mode**, which remembers your choice.
+
 The roadmaps are generated using Google's Gemini API.
 
 ## Running it on your laptop

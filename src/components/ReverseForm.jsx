@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import BackLink from './BackLink'
+import { useLang } from '../prefs'
 
 const EXAMPLE_CAREERS = [
   'Pilot',
@@ -11,6 +12,7 @@ const EXAMPLE_CAREERS = [
 ]
 
 export default function ReverseForm({ onSubmit, onBack }) {
+  const { t } = useLang()
   const [career, setCareer] = useState('')
   const canSubmit = career.trim().length >= 2
 
@@ -23,13 +25,11 @@ export default function ReverseForm({ onSubmit, onBack }) {
       <BackLink onBack={onBack} />
 
       <div className="rise space-y-3" style={{ '--i': 1 }}>
-        <p className="font-mono uppercase text-xs tracking-widest text-teal">the destination</p>
-        <h1 className="font-display font-semibold text-3xl text-ink">
-          What do you want to become?
-        </h1>
-        <p className="text-ink-soft leading-relaxed">
-          Anything specific works — we&rsquo;ll work backwards to the stream you should pick.
+        <p className="font-mono uppercase text-xs tracking-widest text-teal">
+          {t('rev.eyebrow')}
         </p>
+        <h1 className="font-display font-semibold text-3xl text-ink">{t('rev.title')}</h1>
+        <p className="text-ink-soft leading-relaxed">{t('rev.body')}</p>
       </div>
 
       <div className="rise space-y-5" style={{ '--i': 2 }}>
@@ -39,8 +39,8 @@ export default function ReverseForm({ onSubmit, onBack }) {
             value={career}
             onChange={(e) => setCareer(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
-            placeholder="e.g. Commercial Pilot"
-            aria-label="Career you want to pursue"
+            placeholder={t('rev.placeholder')}
+            aria-label={t('rev.aria')}
             className="w-full rounded-2xl border border-line bg-paper-raised px-5 py-4 pr-16 text-lg text-ink shadow-card outline-none transition-colors placeholder:text-ink-soft/50 focus:border-teal"
           />
           <span className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 font-mono text-xs text-ink-soft/60">
@@ -50,7 +50,7 @@ export default function ReverseForm({ onSubmit, onBack }) {
 
         <div className="space-y-2.5">
           <p className="font-mono uppercase text-xs tracking-widest text-ink-soft">
-            or start from a common one
+            {t('rev.common')}
           </p>
           <div className="flex flex-wrap gap-2">
             {EXAMPLE_CAREERS.map((example) => {
@@ -82,7 +82,7 @@ export default function ReverseForm({ onSubmit, onBack }) {
         style={{ '--i': 3 }}
         className="rise press w-full rounded-full bg-teal text-paper font-display font-semibold py-3.5 transition-all hover:bg-teal/90 hover:shadow-lift disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-teal disabled:hover:shadow-none"
       >
-        Build my roadmap
+        {t('rev.submit')}
       </button>
     </div>
   )

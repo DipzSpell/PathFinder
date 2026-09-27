@@ -6,6 +6,7 @@ import ErrorState from '../components/ErrorState'
 import { Callout } from '../components/PageShell'
 import useReveal from '../useReveal'
 import { getComparison } from '../gemini'
+import { useLang } from '../prefs'
 
 const MAX_ITEMS = 4
 
@@ -16,6 +17,7 @@ const PRESETS = {
 }
 
 export default function Compare() {
+  const { t, lang } = useLang()
   const [picked, setPicked] = useState(['B.Tech', 'B.Sc', 'BCA'])
   const [custom, setCustom] = useState('')
   const [screen, setScreen] = useState('picker')
@@ -50,7 +52,7 @@ export default function Compare() {
     setCustom('')
   }
 
-  const run = useCallback(async (options) => {
+  const run = useCallback(async (options, outputLang) => {
     abortPending()
     const controller = new AbortController()
     requestRef.current = controller
@@ -59,7 +61,7 @@ export default function Compare() {
     setScreen('loading')
 
     try {
-      const data = await getComparison({ items: options }, controller.signal)
+      const data = await getComparison({ items: options, lang: outputLang }, controller.signal)
       if (controller.signal.aborted) return
       setResult(data)
       setScreen('results')
@@ -81,7 +83,7 @@ export default function Compare() {
 
   if (screen === 'error') {
     return (
-      <ErrorState message={error} onRetry={() => run(picked)} onRestart={backToPicker} />
+      <ErrorState message={error} onRetry={() => run(picked, lang)} onRestart={backToPicker} />
     )
   }
 
@@ -99,12 +101,12 @@ export default function Compare() {
           >
             ←
           </span>
-          change options
+          {t('compare.change')}
         </button>
 
         <header className="mt-8 space-y-4">
           <p className="rise font-mono uppercase text-xs tracking-widest text-teal">
-            side by side
+            {t('compare.sideBySide')}
           </p>
           <h1
             className="rise font-display font-semibold text-3xl sm:text-4xl leading-tight text-ink"
@@ -125,19 +127,14 @@ export default function Compare() {
         </div>
 
         <div className="mt-10 space-y-8 max-w-2xl">
-          <Callout tone="coral" title="about those salary figures">
-            <p>
-              These are indicative ranges, not promises. Actual pay swings hugely with your
-              college tier, city, company and skills — two people with the same degree can earn
-              very differently. Treat them as rough scale, and check current figures on job
-              sites before making a decision on money alone.
-            </p>
+          <Callout tone="coral" title={t('compare.salaryTitle')}>
+            <p>{t('compare.salaryBody')}</p>
           </Callout>
 
           {result.verdict && (
             <section className="rounded-2xl border border-teal/25 bg-teal-soft px-6 py-5 space-y-2">
               <p className="font-mono uppercase text-xs tracking-widest text-teal">
-                How to actually choose
+                {t('compare.choose')}
               </p>
               <p className="text-sm text-ink leading-relaxed">{result.verdict}</p>
             </section>
@@ -149,19 +146,19 @@ export default function Compare() {
               onClick={backToPicker}
               className="press rounded-full bg-ink text-paper font-display font-semibold px-7 py-3 transition-all hover:bg-ink/90 hover:shadow-lift"
             >
-              Compare something else
+              {t('compare.again')}
             </button>
             <button
               type="button"
               onClick={() => window.print()}
               className="press rounded-full border border-line text-ink-soft font-medium px-7 py-3 transition-colors hover:border-ink/40 hover:text-ink"
             >
-              Save as PDF
+              {t('common.savePdf')}
             </button>
           </div>
 
           <p className="font-mono text-xs text-ink-soft">
-            AI-generated comparison — confirm eligibility and fees on official college sites.
+            {t('compare.disclaimer')}
           </p>
         </div>
       </div>
@@ -181,33 +178,30 @@ export default function Compare() {
         >
           ←
         </span>
-        back to PathFinder
+        {t('compare.back')}
       </Link>
 
       <div className="rise space-y-3" style={{ '--i': 1 }}>
-        <p className="font-mono uppercase text-xs tracking-widest text-teal">compare</p>
-        <h1 className="font-display font-semibold text-3xl text-ink">
-          B.Tech or B.Sc or BCA?
-        </h1>
-        <p className="text-ink-soft leading-relaxed">
-          Pick two to four options and see them side by side — duration, eligibility, exams,
-          salary and what each one actually leads to.
+        <p className="font-mono uppercase text-xs tracking-widest text-teal">
+          {t('compare.eyebrow')}
         </p>
+        <h1 className="font-display font-semibold text-3xl text-ink">{t('compare.title')}</h1>
+        <p className="text-ink-soft leading-relaxed">{t('compare.intro')}</p>
       </div>
 
       <div className="rise space-y-3" style={{ '--i': 2 }}>
         <div className="flex items-baseline justify-between gap-4">
           <p className="font-mono uppercase text-xs tracking-widest text-ink-soft">
-            Your selection
+            {t('compare.selection')}
           </p>
           <span className="font-mono text-xs text-ink-soft">
-            {picked.length} of {MAX_ITEMS}
+            {t('compare.of', { count: picked.length, max: MAX_ITEMS })}
           </span>
         </div>
 
         {picked.length === 0 ? (
           <p className="rounded-2xl border border-dashed border-line px-5 py-6 text-center text-sm text-ink-soft">
-            Nothing picked yet — choose at least two below.
+            {t('compare.none')}
           </p>
         ) : (
           <div className="flex flex-wrap gap-2">
@@ -222,7 +216,7 @@ export default function Compare() {
                 <span aria-hidden="true" className="text-paper/70">
                   ✕
                 </span>
-                <span className="sr-only">Remove {option}</span>
+                <span className="sr-only">{t('compare.remove', { name: option })}</span>
               </button>
             ))}
           </div>
@@ -231,7 +225,9 @@ export default function Compare() {
 
       {Object.entries(PRESETS).map(([group, options], groupIndex) => (
         <section key={group} className="rise space-y-3" style={{ '--i': 3 + groupIndex }}>
-          <p className="font-mono uppercase text-xs tracking-widest text-ink-soft">{group}</p>
+          <p className="font-mono uppercase text-xs tracking-widest text-ink-soft">
+            {t(`compare.group.${group}`)}
+          </p>
           <div className="flex flex-wrap gap-2">
             {options.map((option) => {
               const active = picked.includes(option)
@@ -259,7 +255,7 @@ export default function Compare() {
 
       <section className="rise space-y-3" style={{ '--i': 6 }}>
         <p className="font-mono uppercase text-xs tracking-widest text-ink-soft">
-          Something else
+          {t('compare.else')}
         </p>
         <div className="flex gap-2">
           <input
@@ -267,8 +263,8 @@ export default function Compare() {
             value={custom}
             onChange={(e) => setCustom(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && (e.preventDefault(), addCustom())}
-            placeholder="e.g. B.Pharm"
-            aria-label="Add another option to compare"
+            placeholder={t('compare.placeholder')}
+            aria-label={t('compare.addAria')}
             disabled={picked.length >= MAX_ITEMS}
             className="flex-1 rounded-full border border-line bg-paper-raised px-5 py-2.5 text-sm text-ink outline-none transition-colors placeholder:text-ink-soft/50 focus:border-teal disabled:opacity-40"
           />
@@ -278,19 +274,19 @@ export default function Compare() {
             disabled={!custom.trim() || picked.length >= MAX_ITEMS}
             className="press rounded-full border border-line px-5 py-2.5 text-sm font-medium text-ink-soft transition-colors hover:border-ink/40 hover:text-ink disabled:opacity-40 disabled:cursor-not-allowed"
           >
-            Add
+            {t('compare.add')}
           </button>
         </div>
       </section>
 
       <button
         type="button"
-        onClick={() => picked.length >= 2 && run(picked)}
+        onClick={() => picked.length >= 2 && run(picked, lang)}
         disabled={picked.length < 2}
         style={{ '--i': 7 }}
         className="rise press w-full rounded-full bg-teal text-paper font-display font-semibold py-3.5 transition-all hover:bg-teal/90 hover:shadow-lift disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-teal disabled:hover:shadow-none"
       >
-        {picked.length < 2 ? 'Pick at least two to compare' : `Compare ${picked.length} options`}
+        {picked.length < 2 ? t('compare.pickTwo') : t('compare.run', { count: picked.length })}
       </button>
     </div>
   )

@@ -107,20 +107,30 @@ async function cached(key, produce) {
   return data
 }
 
-export function getForwardRoadmap({ stage, interests }, signal) {
-  return cached(forwardKey({ stage, interests }), async () =>
-    normalizeRoadmap(await callGemini(ROADMAP_SYSTEM, forwardPrompt({ stage, interests }), signal)),
+/** English keys are unprefixed so they keep matching the shipped seed, which is English-only. */
+function langKey(key, lang) {
+  return lang === 'hi' ? `hi:${key}` : key
+}
+
+export function getForwardRoadmap({ stage, interests, lang }, signal) {
+  return cached(langKey(forwardKey({ stage, interests }), lang), async () =>
+    normalizeRoadmap(
+      await callGemini(ROADMAP_SYSTEM, forwardPrompt({ stage, interests, lang }), signal),
+    ),
   )
 }
 
-export function getReverseRoadmap({ career }, signal) {
-  return cached(reverseKey({ career }), async () =>
-    normalizeRoadmap(await callGemini(ROADMAP_SYSTEM, reversePrompt({ career }), signal)),
+export function getReverseRoadmap({ career, lang }, signal) {
+  return cached(langKey(reverseKey({ career }), lang), async () =>
+    normalizeRoadmap(await callGemini(ROADMAP_SYSTEM, reversePrompt({ career, lang }), signal)),
   )
 }
 
-export function getComparison({ items }, signal) {
-  return cached(compareKey({ items }), async () =>
-    normalizeComparison(await callGemini(COMPARE_SYSTEM, comparePrompt({ items }), signal), items),
+export function getComparison({ items, lang }, signal) {
+  return cached(langKey(compareKey({ items }), lang), async () =>
+    normalizeComparison(
+      await callGemini(COMPARE_SYSTEM, comparePrompt({ items, lang }), signal),
+      items,
+    ),
   )
 }

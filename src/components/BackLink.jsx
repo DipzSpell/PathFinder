@@ -1,4 +1,8 @@
+import { useLang } from '../prefs'
+
 export default function BackLink({ onBack }) {
+  const { t } = useLang()
+
   return (
     <button
       type="button"
@@ -11,7 +15,7 @@ export default function BackLink({ onBack }) {
       >
         ←
       </span>
-      back
+      {t('common.back')}
     </button>
   )
 }
