@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import useReveal from '../useReveal'
+import { useLang } from '../prefs'
+import useSavedCount from '../useSavedCount'
 
 /* Positioned in the outer margins only, and hidden until the viewport is wide enough to
    actually have margins — otherwise they collide with the headline. */
@@ -12,9 +14,9 @@ const CONFUSION_BUBBLES = [
 ]
 
 const HOW_IT_WORKS = [
-  { step: '01', title: 'Answer two questions', detail: 'Your stage and your interests, or just the career you want.' },
-  { step: '02', title: 'We map the route', detail: 'Streams, entrance exams and degrees, in the order they happen.' },
-  { step: '03', title: 'Follow the steps', detail: 'Save it as a PDF and keep it somewhere you will actually look.' },
+  { step: '01', title: 'landing.how1t', detail: 'landing.how1d' },
+  { step: '02', title: 'landing.how2t', detail: 'landing.how2d' },
+  { step: '03', title: 'landing.how3t', detail: 'landing.how3d' },
 ]
 
 function CompassIcon() {
@@ -61,6 +63,8 @@ function ArrowIcon() {
 
 export default function Landing({ onPick }) {
   const revealRef = useReveal()
+  const { t } = useLang()
+  const savedCount = useSavedCount()
 
   return (
     <main ref={revealRef} className="relative overflow-hidden px-6 pt-10 pb-20">
@@ -111,15 +115,15 @@ export default function Landing({ onPick }) {
           className="rise font-mono uppercase text-xs tracking-widest text-ink-soft"
           style={{ '--i': 0 }}
         >
-          for students after 10th &amp; 12th
+          {t('landing.eyebrow')}
         </p>
 
         <h1 className="mt-6 font-display font-semibold text-4xl sm:text-5xl leading-tight">
           <span className="rise block text-ink" style={{ '--i': 1 }}>
-            Everyone gives advice.
+            {t('landing.h1a')}
           </span>
           <span className="rise block text-saffron" style={{ '--i': 2 }}>
-            Nobody gives you the steps.
+            {t('landing.h1b')}
           </span>
         </h1>
 
@@ -127,8 +131,7 @@ export default function Landing({ onPick }) {
           className="rise mt-6 text-ink-soft max-w-xl mx-auto leading-relaxed"
           style={{ '--i': 3 }}
         >
-          Stream choices, entrance exams, cutoffs — the information is scattered across a
-          hundred tabs and conflicting opinions. PathFinder turns it into one clear path.
+          {t('landing.intro')}
         </p>
 
         <div className="mt-10 grid sm:grid-cols-2 gap-4 text-left">
@@ -141,18 +144,17 @@ export default function Landing({ onPick }) {
             <span className="flex items-center justify-between text-saffron">
               <CompassIcon />
               <span className="font-mono text-[0.65rem] uppercase tracking-widest text-ink-soft">
-                explore
+                {t('landing.fwdTag')}
               </span>
             </span>
             <span className="mt-4 block font-display font-semibold text-lg text-ink">
-              I don&rsquo;t know what to pick
+              {t('landing.fwdTitle')}
             </span>
             <span className="mt-1.5 block text-sm text-ink-soft leading-relaxed">
-              Tell us where you are and what you enjoy. We&rsquo;ll suggest a direction and
-              the route to it.
+              {t('landing.fwdBody')}
             </span>
             <span className="mt-4 flex items-center gap-1.5 font-medium text-sm text-saffron">
-              Start here <ArrowIcon />
+              {t('landing.fwdCta')} <ArrowIcon />
             </span>
           </button>
 
@@ -165,33 +167,44 @@ export default function Landing({ onPick }) {
             <span className="flex items-center justify-between text-teal">
               <FlagIcon />
               <span className="font-mono text-[0.65rem] uppercase tracking-widest text-ink-soft">
-                target
+                {t('landing.revTag')}
               </span>
             </span>
             <span className="mt-4 block font-display font-semibold text-lg text-ink">
-              I already know my dream career
+              {t('landing.revTitle')}
             </span>
             <span className="mt-1.5 block text-sm text-ink-soft leading-relaxed">
-              Name it — pilot, CA, doctor, designer — and get the stream, exams and degrees
-              in order.
+              {t('landing.revBody')}
             </span>
             <span className="mt-4 flex items-center gap-1.5 font-medium text-sm text-teal">
-              Build my path <ArrowIcon />
+              {t('landing.revCta')} <ArrowIcon />
             </span>
           </button>
         </div>
 
         <p className="rise mt-6 font-mono text-xs text-ink-soft" style={{ '--i': 6 }}>
-          no sign-up · takes under a minute
+          {t('landing.noSignup')}
         </p>
 
+        {savedCount > 0 && (
+          <p className="rise mt-4 text-sm text-ink-soft" style={{ '--i': 6 }}>
+            {t('landing.savedCount', { count: savedCount })}{' '}
+            <Link
+              to="/saved"
+              className="choice-card inline-flex items-center gap-1 font-medium text-saffron underline underline-offset-4 decoration-saffron/30 hover:decoration-saffron"
+            >
+              {t('landing.savedOpen')} <ArrowIcon />
+            </Link>
+          </p>
+        )}
+
         <p className="rise mt-8 text-sm text-ink-soft" style={{ '--i': 7 }}>
-          Already stuck between a few options?{' '}
+          {t('landing.stuck')}{' '}
           <Link
             to="/compare"
             className="choice-card inline-flex items-center gap-1 font-medium text-teal underline underline-offset-4 decoration-teal/30 hover:decoration-teal"
           >
-            Compare them side by side <ArrowIcon />
+            {t('landing.compareLink')} <ArrowIcon />
           </Link>
         </p>
       </div>
@@ -200,19 +213,40 @@ export default function Landing({ onPick }) {
         <div className="flex items-center gap-4">
           <span className="h-px flex-1 bg-line" />
           <span className="font-mono uppercase text-xs tracking-widest text-ink-soft">
-            how it works
+            {t('landing.how')}
           </span>
           <span className="h-px flex-1 bg-line" />
         </div>
 
-        <div className="mt-8 grid sm:grid-cols-3 gap-6">
-          {HOW_IT_WORKS.map((item, i) => (
-            <div key={item.step} className="reveal" style={{ '--i': i }}>
-              <span className="font-mono text-xs text-saffron">{item.step}</span>
-              <h2 className="mt-2 font-display font-semibold text-ink">{item.title}</h2>
-              <p className="mt-1.5 text-sm text-ink-soft leading-relaxed">{item.detail}</p>
-            </div>
-          ))}
+        <div className="relative mt-10">
+          {/* A strip of road joining the three stops — sideways on wide screens, down the
+              left edge on phones. */}
+          <span
+            aria-hidden="true"
+            className="mini-road absolute hidden sm:block left-[8%] right-[8%] top-[1.05rem] h-2.5 rounded-full"
+          />
+          <span
+            aria-hidden="true"
+            className="absolute sm:hidden left-[1.05rem] top-4 bottom-4 w-2.5 rounded-full bg-[var(--color-road)]"
+          />
+
+          <ol className="relative grid sm:grid-cols-3 gap-8 sm:gap-6">
+            {HOW_IT_WORKS.map((item, i) => (
+              <li
+                key={item.step}
+                className="reveal flex gap-4 sm:block sm:text-center"
+                style={{ '--i': i }}
+              >
+                <span className="relative z-10 flex h-[2.6rem] w-[2.6rem] shrink-0 items-center justify-center rounded-full bg-saffron font-mono text-sm font-medium text-paper shadow-[0_0_0_4px_var(--color-paper)] sm:mx-auto">
+                  {item.step}
+                </span>
+                <div>
+                  <h2 className="font-display font-semibold text-ink sm:mt-4">{t(item.title)}</h2>
+                  <p className="mt-1.5 text-sm text-ink-soft leading-relaxed">{t(item.detail)}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </main>

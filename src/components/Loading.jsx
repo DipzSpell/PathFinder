@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react'
+import { useLang } from '../prefs'
 
-const MESSAGES = [
-  'Reading your answers…',
-  'Mapping streams and entrance exams…',
-  'Checking realistic timelines…',
-  'Laying out your steps…',
-]
+const MESSAGES = ['loading.m1', 'loading.m2', 'loading.m3', 'loading.m4']
 
 export default function Loading({ flow }) {
+  const { t } = useLang()
   const [index, setIndex] = useState(0)
   const accent = flow === 'reverse' ? 'var(--color-teal)' : 'var(--color-saffron)'
 
@@ -54,11 +51,11 @@ export default function Loading({ flow }) {
       </svg>
 
       <p className="mt-6 font-display font-semibold text-xl text-ink" aria-live="polite">
-        Building your roadmap
+        {t('loading.title')}
       </p>
 
       <p key={index} className="fade-in mt-3 font-mono text-sm text-ink-soft">
-        {MESSAGES[index]}
+        {t(MESSAGES[index])}
       </p>
     </div>
   )

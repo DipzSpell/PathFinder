@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
 
 @theme {
   --color-paper: #FAF6EF;
@@ -15,16 +15,51 @@
   --color-coral-soft: #F7DDD6;
   --color-line: #E4DCCB;
 
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  /* Latin faces have no Devanagari glyphs, so Hindi text falls through to Noto per character. */
+  --font-display: 'Space Grotesk', 'Noto Sans Devanagari', sans-serif;
+  --font-body: 'Inter', 'Noto Sans Devanagari', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Noto Sans Devanagari', monospace;
 
   --shadow-card: 0 1px 2px rgba(28, 26, 46, 0.04), 0 10px 30px -18px rgba(28, 26, 46, 0.3);
   --shadow-lift: 0 26px 50px -26px rgba(28, 26, 46, 0.45);
 }
 
+/* Kept out of @theme so they're always emitted, whether or not a utility references them. */
+:root {
+  --color-road: #3A3848;
+  --color-road-mark: #FFFDFA;
+}
+
+/* ---------- dark theme ----------
+   Every utility reads these tokens, so swapping them is the whole theme. "paper" stays the
+   background and "ink" the foreground, which keeps inverted buttons (bg-ink text-paper) and
+   filled chips (bg-saffron text-paper) readable in both modes. */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-paper: #13121C;
+  --color-paper-raised: #1C1B28;
+  --color-ink: #F2EDE3;
+  --color-ink-soft: #ABA6BA;
+  --color-saffron: #F29150;
+  --color-saffron-soft: #3A2718;
+  --color-teal: #62B8A0;
+  --color-teal-soft: #15302A;
+  --color-coral: #F07A64;
+  --color-coral-soft: #3B1D19;
+  --color-line: #34323F;
+  --color-road: #2A2937;
+  --color-road-mark: #F2EDE3;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px -18px rgba(0, 0, 0, 0.7);
+  --shadow-lift: 0 26px 50px -26px rgba(0, 0, 0, 0.85);
+}
+
+:root[data-theme='dark'] .hero-glow {
+  opacity: 0.28;
+}
+
 body {
   margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
   background: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-body);
@@ -158,47 +193,149 @@ body {
   animation-delay: calc(var(--i, 0) * 400ms);
 }
 
-/* ---------- roadmap timeline ---------- */
+/* ---------- roadmap: the road ----------
+   Each stop owns the stretch of road from its own marker down to the next one. The SVG is
+   stretched to fit (preserveAspectRatio="none") with non-scaling strokes, so the curve adapts
+   to however tall a card turns out to be while the lane width stays constant. */
 
-.trail-connector {
+.road-stop {
   position: relative;
-  width: 1.5px;
-  background-image: radial-gradient(circle, var(--color-line) 1.5px, transparent 1.5px);
-  background-size: 1.5px 10px;
-  background-repeat: repeat-y;
 }
 
-/* Solid accent that draws down the dotted trail as each step scrolls into view. */
-.trail-fill {
+.road-lane {
+  position: relative;
+}
+
+.road-segment {
   position: absolute;
-  inset: 0 0 auto 0;
-  height: 0;
-  background: var(--accent);
-  opacity: 0.55;
-  transition: height 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: 0.1s;
+  left: 0;
+  right: 0;
+  top: var(--node-center, 1.25rem);
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  pointer-events: none;
 }
 
-.roadmap-step.is-visible .trail-fill {
-  height: 100%;
+.road-asphalt {
+  stroke: var(--color-road);
+  stroke-width: 16px;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.road-mark {
+  stroke: var(--color-road-mark);
+  stroke-width: 1.5px;
+  stroke-dasharray: 6 7;
+  fill: none;
+  opacity: 0.75;
+}
+
+/* The accent line that "drives" down the road as each stop scrolls into view. */
+.road-travel {
+  stroke: var(--accent);
+  stroke-width: 4px;
+  stroke-linecap: round;
+  fill: none;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  opacity: 0.9;
+  transition: stroke-dashoffset 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: 0.15s;
+}
+
+.road-stop.is-visible .road-travel {
+  stroke-dashoffset: 0;
+}
+
+.road-node {
+  position: absolute;
+  top: calc(var(--node-center, 1.25rem) - 1.25rem);
+  left: var(--x, 50%);
+  z-index: 2;
+  /* No display here: the markup toggles flex/hidden per breakpoint, and an unlayered display
+     rule would beat Tailwind's layered utilities. */
+  height: 2.5rem;
+  width: 2.5rem;
+  translate: -50% 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
 }
 
 .roadmap-node {
   background: var(--accent);
   color: var(--color-paper);
-  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  box-shadow: 0 0 0 4px var(--color-paper);
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease,
+              background-color 0.3s ease;
 }
 
-.roadmap-step .roadmap-node {
+.road-stop .roadmap-node {
   transform: scale(0.7);
 }
 
-.roadmap-step.is-visible .roadmap-node {
+.road-stop.is-visible .roadmap-node {
   transform: scale(1);
 }
 
-.roadmap-step:hover .roadmap-node {
-  box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 16%, transparent);
+.road-stop:hover .roadmap-node {
+  box-shadow: 0 0 0 4px var(--color-paper),
+              0 0 0 9px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.roadmap-node.is-done {
+  background: var(--color-teal);
+}
+
+.road-endpoint {
+  background: var(--color-paper-raised);
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--color-paper);
+}
+
+.road-card {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.road-stop:hover .road-card {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--color-line));
+  box-shadow: var(--shadow-lift);
+}
+
+.road-card.is-done {
+  border-color: color-mix(in srgb, var(--color-teal) 35%, var(--color-line));
+}
+
+/* Pointer from the card toward the road — the road is on the card's left on phones and for
+   right-hand cards on wide screens, and on its right for left-hand cards. */
+.road-card::before {
+  content: '';
+  position: absolute;
+  top: calc(var(--node-center, 1.25rem) - 0.4rem);
+  left: -0.45rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: inherit;
+  border: inherit;
+  rotate: 45deg;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+@media (min-width: 40rem) {
+  .road-card[data-side='left']::before {
+    left: auto;
+    right: -0.45rem;
+    rotate: 225deg;
+  }
+}
+
+.signpost {
+  background: color-mix(in srgb, var(--accent) 12%, var(--color-paper));
+  border-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  color: var(--color-ink);
 }
 
 .roadmap-rule {
@@ -208,6 +345,20 @@ body {
 .roadmap-chip {
   background: color-mix(in srgb, var(--accent) 12%, var(--color-paper));
   border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.progress-fill {
+  background: var(--accent);
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Landing "how it works" road. */
+.mini-road {
+  background-image: linear-gradient(90deg, var(--color-road-mark) 50%, transparent 50%);
+  background-size: 14px 1.5px;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-color: var(--color-road);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -223,7 +374,7 @@ body {
 
   .reveal,
   .lift,
-  .trail-fill,
+  .road-travel,
   .roadmap-node,
   .choice-card .choice-arrow {
     transition: none !important;
@@ -234,12 +385,12 @@ body {
     transform: none;
   }
 
-  .roadmap-step .roadmap-node {
+  .road-stop .roadmap-node {
     transform: none;
   }
 
-  .trail-fill {
-    height: 100%;
+  .road-travel {
+    stroke-dashoffset: 0;
   }
 }
 
@@ -248,13 +399,31 @@ body {
     margin: 14mm;
   }
 
+  /* Paper is white, whatever the screen theme. */
+  :root,
+  :root[data-theme='dark'] {
+    --color-paper: #fff;
+    --color-paper-raised: #fff;
+    --color-ink: #1C1A2E;
+    --color-ink-soft: #4B4860;
+    --color-saffron: #E8792E;
+    --color-saffron-soft: #FBE4D0;
+    --color-teal: #2F6F5E;
+    --color-teal-soft: #DCEBE6;
+    --color-coral: #C4432E;
+    --color-coral-soft: #F7DDD6;
+    --color-line: #E4DCCB;
+    --color-road: #D9D3C6;
+    --color-road-mark: #fff;
+  }
+
   html,
   body {
     background: #fff;
   }
 
-  /* Backgrounds carry meaning here — the numbered nodes, the dotted trail and the
-     pitfall callout are all background-painted, so they must survive the print pass. */
+  /* Backgrounds carry meaning here — the numbered markers, signposts and the pitfall
+     callout are all background-painted, so they must survive the print pass. */
   *,
   *::before,
   *::after {
@@ -278,9 +447,13 @@ body {
     padding: 0 !important;
   }
 
-  .roadmap-step {
+  .road-stop {
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+
+  .road-card {
+    box-shadow: none !important;
   }
 
   h1,
@@ -294,7 +467,8 @@ body {
   .rise,
   .fade-in,
   .screen-enter,
-  .reveal {
+  .reveal,
+  .road-stop {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
@@ -302,8 +476,8 @@ body {
   }
 
   /* Chrome drops background fills when "Background graphics" is off, which would leave
-     the paper-white step numbers invisible and erase the dotted trail. Borders and text
-     always print, so the timeline is redrawn with those instead of relying on fills. */
+     the paper-white step numbers invisible. Borders, strokes and text always print, so the
+     markers are redrawn with those instead of relying on fills. */
   .roadmap-node {
     background: transparent !important;
     color: var(--color-ink) !important;
@@ -312,13 +486,7 @@ body {
     box-shadow: none !important;
   }
 
-  .trail-connector {
-    width: 0 !important;
-    background-image: none !important;
-    border-left: 1.5px dotted var(--color-ink-soft);
-  }
-
-  .trail-fill {
+  .road-travel {
     display: none !important;
   }
 

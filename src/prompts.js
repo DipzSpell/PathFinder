@@ -55,27 +55,38 @@ real entrance exams (JEE, NEET, CUET, CLAT, state CETs, NIFT/NID, CA Foundation)
 patterns. Return exactly one item per option requested, in the order given. Be honest about weak
 options rather than flattering every choice.`
 
-export function forwardPrompt({ stage, interests }) {
+const HINDI_INSTRUCTION = `
+
+Language: write every string VALUE in the JSON in simple, everyday Hindi (Devanagari script) that a
+Class 10 student understands. Keep exam names, degree names, abbreviations and institutions in their
+usual English form (JEE Main, NEET, CUET, MBBS, B.Tech, CA, IIT, NDA). JSON keys stay in English exactly
+as specified.`
+
+function withLanguage(prompt, lang) {
+  return lang === 'hi' ? prompt + HINDI_INSTRUCTION : prompt
+}
+
+export function forwardPrompt({ stage, interests, lang }) {
   const interestList = interests?.length ? interests.join(', ') : 'no specific interests given'
 
-  return `A student has just ${stage === '10th' ? 'finished Class 10' : 'finished Class 12'} in India and is unsure what to pursue next.
+  return withLanguage(`A student has just ${stage === '10th' ? 'finished Class 10' : 'finished Class 12'} in India and is unsure what to pursue next.
 Their interests: ${interestList}.
 
-Recommend the single best-fit direction (stream and/or career path) for them, then give the roadmap to get there from where they are right now.`
+Recommend the single best-fit direction (stream and/or career path) for them, then give the roadmap to get there from where they are right now.`, lang)
 }
 
-export function reversePrompt({ career }) {
-  return `A student in India wants to become a "${career}". Assume they are currently about to choose their 11th/12th stream (Science, Commerce, or Arts) and are starting from scratch.
+export function reversePrompt({ career, lang }) {
+  return withLanguage(`A student in India wants to become a "${career}". Assume they are currently about to choose their 11th/12th stream (Science, Commerce, or Arts) and are starting from scratch.
 
-Give the complete roadmap from this starting point to becoming a "${career}", including the correct stream choice, required entrance exams, and degree path.`
+Give the complete roadmap from this starting point to becoming a "${career}", including the correct stream choice, required entrance exams, and degree path.`, lang)
 }
 
-export function comparePrompt({ items }) {
+export function comparePrompt({ items, lang }) {
   const list = items.map((item, i) => `${i + 1}. ${item}`).join('\n')
 
-  return `An Indian student is deciding between these options after Class 12:
+  return withLanguage(`An Indian student is deciding between these options after Class 12:
 
 ${list}
 
-Compare them side by side for this student. Return exactly ${items.length} items, in the same order as listed above, keeping each "name" exactly as written.`
+Compare them side by side for this student. Return exactly ${items.length} items, in the same order as listed above, keeping each "name" exactly as written.`, lang)
 }

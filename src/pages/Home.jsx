@@ -7,6 +7,7 @@ import Loading from '../components/Loading'
 import Roadmap from '../components/Roadmap'
 import ErrorState from '../components/ErrorState'
 import { getForwardRoadmap, getReverseRoadmap } from '../gemini'
+import { useLang } from '../prefs'
 
 export default function Home() {
   const [screen, setScreen] = useState('landing')
@@ -16,6 +17,7 @@ export default function Home() {
   const [error, setError] = useState(null)
   const requestRef = useRef(null)
   const location = useLocation()
+  const { lang } = useLang()
 
   const abortPending = () => {
     requestRef.current?.abort()
@@ -83,17 +85,24 @@ export default function Home() {
     <div key={screen} className="screen-enter">
       {screen === 'landing' && <Landing onPick={handlePick} />}
       {screen === 'forward-form' && (
-        <ForwardForm onSubmit={(data) => generate('forward', data)} onBack={handleBack} />
+        <ForwardForm onSubmit={(data) => generate('forward', { ...data, lang })} onBack={handleBack} />
       )}
       {screen === 'reverse-form' && (
-        <ReverseForm onSubmit={(data) => generate('reverse', data)} onBack={handleBack} />
+        <ReverseForm onSubmit={(data) => generate('reverse', { ...data, lang })} onBack={handleBack} />
       )}
       {screen === 'loading' && <Loading flow={flow} />}
       {screen === 'error' && (
         <ErrorState message={error} onRetry={handleRetry} onRestart={handleRestart} />
       )}
       {screen === 'results' && roadmap && (
-        <Roadmap roadmap={roadmap} flow={flow} onRestart={handleRestart} />
+        <Roadmap
+          roadmap={roadmap}
+          flow={flow}
+          lang={formData?.lang ?? 'en'}
+          input={formData}
+          onRestart={handleRestart}
+          onTranslate={() => generate(flow, { ...formData, lang })}
+        />
       )}
     </div>
   )

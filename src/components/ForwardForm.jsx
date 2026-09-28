@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import BackLink from './BackLink'
+import { useLang } from '../prefs'
 
 const STAGES = [
-  { value: '10th', label: 'Just finished 10th', hint: 'Choosing a stream next' },
-  { value: '12th', label: 'Just finished 12th', hint: 'Choosing a degree next' },
+  { value: '10th', label: 'fwd.stage10', hint: 'fwd.stage10hint' },
+  { value: '12th', label: 'fwd.stage12', hint: 'fwd.stage12hint' },
 ]
 
+/* Values stay English whatever the UI language — they go into the prompt and the cache key. */
 const INTERESTS = [
   'Math & Logic',
   'Science & Experiments',
@@ -18,6 +20,7 @@ const INTERESTS = [
 ]
 
 export default function ForwardForm({ onSubmit, onBack }) {
+  const { t } = useLang()
   const [stage, setStage] = useState(null)
   const [interests, setInterests] = useState([])
 
@@ -35,8 +38,10 @@ export default function ForwardForm({ onSubmit, onBack }) {
 
       <div className="rise space-y-4">
         <div className="flex items-center justify-between font-mono text-xs text-ink-soft">
-          <span className="uppercase tracking-widest">Step {Math.min(filled + 1, 2)} of 2</span>
-          <span>{filled === 2 ? 'ready' : 'in progress'}</span>
+          <span className="uppercase tracking-widest">
+            {t('fwd.step', { n: Math.min(filled + 1, 2) })}
+          </span>
+          <span>{filled === 2 ? t('fwd.ready') : t('fwd.progress')}</span>
         </div>
         <div className="h-1 rounded-full bg-line overflow-hidden">
           <div
@@ -47,12 +52,12 @@ export default function ForwardForm({ onSubmit, onBack }) {
       </div>
 
       <h1 className="rise font-display font-semibold text-3xl text-ink" style={{ '--i': 1 }}>
-        Where are you right now?
+        {t('fwd.title')}
       </h1>
 
       <section className="rise space-y-4" style={{ '--i': 2 }}>
         <p className="font-mono uppercase text-xs tracking-widest text-ink-soft">
-          Step 1 · Your stage
+          {t('fwd.stageLabel')}
         </p>
         <div className="grid sm:grid-cols-2 gap-3">
           {STAGES.map((s) => (
@@ -67,13 +72,13 @@ export default function ForwardForm({ onSubmit, onBack }) {
                   : 'bg-paper-raised border-line text-ink hover:border-ink/40'
               }`}
             >
-              <span className="block font-medium">{s.label}</span>
+              <span className="block font-medium">{t(s.label)}</span>
               <span
                 className={`mt-0.5 block text-xs ${
                   stage === s.value ? 'text-paper/70' : 'text-ink-soft'
                 }`}
               >
-                {s.hint}
+                {t(s.hint)}
               </span>
             </button>
           ))}
@@ -83,10 +88,10 @@ export default function ForwardForm({ onSubmit, onBack }) {
       <section className="rise space-y-4" style={{ '--i': 3 }}>
         <div className="flex items-baseline justify-between gap-4">
           <p className="font-mono uppercase text-xs tracking-widest text-ink-soft">
-            Step 2 · What interests you
+            {t('fwd.interestLabel')}
           </p>
           <span className="font-mono text-xs text-ink-soft">
-            {interests.length ? `${interests.length} selected` : 'optional'}
+            {interests.length ? t('fwd.selected', { count: interests.length }) : t('fwd.optional')}
           </span>
         </div>
         <div className="flex flex-wrap gap-2.5">
@@ -112,7 +117,7 @@ export default function ForwardForm({ onSubmit, onBack }) {
                 >
                   {active ? '✓' : '+'}
                 </span>
-                {interest}
+                {t(`interest.${interest}`)}
               </button>
             )
           })}
@@ -126,7 +131,7 @@ export default function ForwardForm({ onSubmit, onBack }) {
         style={{ '--i': 4 }}
         className="rise press w-full rounded-full bg-ink text-paper font-display font-semibold py-3.5 transition-all hover:bg-ink/90 hover:shadow-lift disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-ink disabled:hover:shadow-none"
       >
-        {stage ? 'Show my roadmap' : 'Pick your stage to continue'}
+        {stage ? t('fwd.submit') : t('fwd.pickStage')}
       </button>
     </div>
   )

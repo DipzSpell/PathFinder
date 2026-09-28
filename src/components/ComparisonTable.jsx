@@ -1,15 +1,17 @@
+import { useLang } from '../prefs'
+
 const ROWS = [
-  { key: 'kind', label: 'Type' },
-  { key: 'duration', label: 'Duration' },
-  { key: 'eligibility', label: 'Eligibility' },
-  { key: 'entranceExams', label: 'Entrance exams', type: 'list' },
-  { key: 'studyFocus', label: 'What you study' },
-  { key: 'startingSalary', label: 'Starting salary', type: 'salary' },
-  { key: 'experiencedSalary', label: 'After 5–8 years', type: 'salary' },
-  { key: 'topRoles', label: 'Common roles', type: 'list' },
-  { key: 'higherStudies', label: 'Higher studies' },
-  { key: 'bestFor', label: 'Best suited to' },
-  { key: 'watchOut', label: 'Watch out for', type: 'warn' },
+  { key: 'kind' },
+  { key: 'duration' },
+  { key: 'eligibility' },
+  { key: 'entranceExams', type: 'list' },
+  { key: 'studyFocus' },
+  { key: 'startingSalary', type: 'salary' },
+  { key: 'experiencedSalary', type: 'salary' },
+  { key: 'topRoles', type: 'list' },
+  { key: 'higherStudies' },
+  { key: 'bestFor' },
+  { key: 'watchOut', type: 'warn' },
 ]
 
 function Cell({ row, value }) {
@@ -49,6 +51,7 @@ function Cell({ row, value }) {
 }
 
 export default function ComparisonTable({ items }) {
+  const { t } = useLang()
   // The per-column minimum is what forces a horizontal scroll on narrow screens; the grid
   // itself must stay at container width, or max-content sizing blows every column up.
   const columns = `minmax(7rem, 9rem) repeat(${items.length}, minmax(13rem, 1fr))`
@@ -81,7 +84,7 @@ export default function ComparisonTable({ items }) {
                 rowIndex === 0 ? '' : 'border-t border-line/70'
               }`}
             >
-              {row.label}
+              {t(`row.${row.key}`)}
             </div>
             {items.map((item) => (
               <div
