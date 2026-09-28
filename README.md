@@ -4,7 +4,7 @@ After Class 10 and 12, everyone suddenly has an opinion about what you should do
 
 I built PathFinder to fix that. You answer a couple of questions and it gives you one clear roadmap, step by step: what to choose, which exams to keep an eye on, and the common mistake people make on that path.
 
-Try it here: **[pathfinder-rouge-beta.vercel.app](https://pathfinder-rouge-beta.vercel.app)**
+Try it here: **[pathfinder-rouge-beta.vercel.app](https://pathfinder-pf.vercel.app)**
 
 You can use it in two ways:
 
