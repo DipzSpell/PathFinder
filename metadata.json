@@ -1,0 +1,8 @@
+{
+  "name": "PathFinder — Career Roadmap for Indian Students",
+  "description": "Interactive career roadmap and entrance exam comparison tool tailored for Indian students.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

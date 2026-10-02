@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import Roadmap from '../components/Roadmap'
+import ProgressBar from '../components/ProgressBar'
 import { ArrowIcon, TrashIcon } from '../components/Icons'
 import { useLang } from '../prefs'
 import { SAVED_EVENT, getSaved, listSaved, removeSaved } from '../saved'
@@ -115,7 +116,6 @@ function SavedList() {
           {entries.map((entry, i) => {
             const total = entry.roadmap.steps?.length ?? 0
             const doneCount = (entry.progress ?? []).filter((n) => n < total).length
-            const pct = total ? Math.round((doneCount / total) * 100) : 0
             const accent = entry.flow === 'reverse' ? 'bg-teal' : 'bg-saffron'
 
             return (
@@ -140,10 +140,12 @@ function SavedList() {
                     {entry.roadmap.title}
                   </span>
                   <span className="mt-3 flex items-center gap-3">
-                    <span className="h-1.5 flex-1 rounded-full bg-line overflow-hidden">
-                      <span
-                        className={`block h-full rounded-full ${accent}`}
-                        style={{ width: `${pct}%` }}
+                    <span className="flex-1">
+                      <ProgressBar
+                        value={doneCount}
+                        max={total}
+                        size="sm"
+                        barClassName={accent}
                       />
                     </span>
                     <span className="font-mono text-xs text-ink-soft">

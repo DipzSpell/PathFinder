@@ -349,7 +349,8 @@ body {
 
 .progress-fill {
   background: var(--accent);
-  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: width 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: width;
 }
 
 /* Landing "how it works" road. */

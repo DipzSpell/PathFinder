@@ -8,48 +8,23 @@ import {
 import { normalizeComparison, normalizeRoadmap } from './normalize'
 import { compareKey, forwardKey, readCache, reverseKey, writeLocal } from './cache'
 
-const MODEL = 'gemini-flash-lite-latest'
-const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`
 const TIMEOUT_MS = 30000
-
-function buildRequestBody(systemInstruction, userPrompt) {
-  return {
-    systemInstruction: {
-      role: 'system',
-      parts: [{ text: systemInstruction }],
-    },
-    contents: [
-      {
-        role: 'user',
-        parts: [{ text: userPrompt }],
-      },
-    ],
-    generationConfig: {
-      responseMimeType: 'application/json',
-    },
-  }
-}
 
 function stripMarkdownFences(text) {
   return text.trim().replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/, '')
 }
 
 async function callGemini(systemInstruction, userPrompt, signal) {
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY
-  if (!apiKey) {
-    throw new Error('Missing VITE_GEMINI_API_KEY — set it in your .env file.')
-  }
-
   const timeout = new AbortController()
   const timer = setTimeout(() => timeout.abort(), TIMEOUT_MS)
   signal?.addEventListener('abort', () => timeout.abort(), { once: true })
 
   let response
   try {
-    response = await fetch(`${ENDPOINT}?key=${apiKey}`, {
+    response = await fetch('/api/gemini/generate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(buildRequestBody(systemInstruction, userPrompt)),
+      body: JSON.stringify({ systemInstruction, userPrompt }),
       signal: timeout.signal,
     })
   } catch (err) {
@@ -63,24 +38,21 @@ async function callGemini(systemInstruction, userPrompt, signal) {
   }
 
   if (!response.ok) {
-    const detail = await response.text().catch(() => '')
+    const detail = await response.json().catch(() => ({}))
     if (response.status === 429) {
       throw new Error('Too many requests right now. Wait a moment and try again.')
     }
-    if (response.status === 400 || response.status === 403) {
-      throw new Error('The API key was rejected. Check VITE_GEMINI_API_KEY in your .env file.')
-    }
-    throw new Error(`Roadmap service failed (${response.status}). ${detail.slice(0, 160)}`)
+    throw new Error(detail.error || `Roadmap service failed (${response.status}).`)
   }
 
   const data = await response.json()
-  const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text
+  const rawText = data?.text
   if (!rawText) {
     throw new Error('The roadmap service returned an empty response. Try again.')
   }
 
   try {
-    return JSON.parse(stripMarkdownFences(rawText))
+    return typeof rawText === 'object' ? rawText : JSON.parse(stripMarkdownFences(rawText))
   } catch {
     throw new Error('The roadmap came back in an unreadable format. Try again.')
   }

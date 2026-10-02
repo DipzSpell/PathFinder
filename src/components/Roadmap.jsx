@@ -3,6 +3,8 @@ import useReveal from '../useReveal'
 import { useLang } from '../prefs'
 import { findSaved, removeSaved, roadmapSignature, saveRoadmap, updateProgress } from '../saved'
 import ShareMenu from './ShareMenu'
+import ProgressBar from './ProgressBar'
+import RoadmapProgressTracker from './RoadmapProgressTracker'
 import {
   BookmarkIcon,
   CautionIcon,
@@ -45,12 +47,15 @@ function RoadSegment({ from, to, className }) {
 
 /** One stop on the road: the lane (marker + the stretch of road down to the next stop), the
     card, and on wide screens a signpost on the opposite side. */
-function Stop({ side, x, nextX, node, card, signpost, last }) {
+function Stop({ id, side, x, nextX, node, card, signpost, last }) {
   const cardCol = side === 'left' ? 'sm:col-start-1' : 'sm:col-start-3'
   const signCol = side === 'left' ? 'sm:col-start-3 sm:justify-start' : 'sm:col-start-1 sm:justify-end'
 
   return (
-    <li className="road-stop reveal grid grid-cols-[3.25rem_1fr] gap-x-3 sm:grid-cols-[1fr_6rem_1fr] sm:gap-x-4">
+    <li
+      id={id}
+      className="road-stop reveal grid grid-cols-[3.25rem_1fr] gap-x-3 sm:grid-cols-[1fr_6rem_1fr] sm:gap-x-4 scroll-mt-24"
+    >
       <div
         className="road-lane col-start-1 row-start-1 sm:col-start-2"
         style={{ '--x': `${x.mobile}%` }}
@@ -128,12 +133,33 @@ export default function Roadmap({
     { mobile: LANE_X.mobile.center, desktop: LANE_X.desktop.center },
   ]
 
+  const handleResetProgress = () => {
+    setDone([])
+    if (savedId) updateProgress(savedId, [])
+  }
+
+  const handleMarkAllProgress = () => {
+    const all = steps.map((_, i) => i)
+    setDone(all)
+    if (savedId) updateProgress(savedId, all)
+  }
+
   return (
     <div
       ref={revealRef}
       style={ACCENTS[flow] ?? ACCENTS.forward}
-      className="roadmap-sheet max-w-3xl mx-auto px-6 py-16"
+      className="roadmap-sheet max-w-3xl mx-auto px-6 py-10 sm:py-16"
     >
+      <RoadmapProgressTracker
+        steps={steps}
+        done={done}
+        flow={flow}
+        onToggleStep={toggleDone}
+        onReset={handleResetProgress}
+        onMarkAll={handleMarkAllProgress}
+        savedId={savedId}
+      />
+
       <header className="space-y-4 max-w-2xl">
         <p className={`rise font-mono uppercase text-xs tracking-widest ${accentColor}`}>
           {eyebrow ?? t('roadmap.eyebrow')}
@@ -205,11 +231,15 @@ export default function Roadmap({
       <div className="no-print rise mt-6 max-w-md space-y-2" style={{ '--i': 6 }}>
         <div className="flex items-baseline justify-between gap-4 font-mono text-xs text-ink-soft">
           <span>{t('roadmap.progress', { done: doneCount, total: steps.length })}</span>
-          <span>{pct}%</span>
+          <span className="tabular-nums font-semibold text-ink">{pct}%</span>
         </div>
-        <div className="h-1.5 rounded-full bg-line overflow-hidden">
-          <div className="progress-fill h-full rounded-full" style={{ width: `${pct}%` }} />
-        </div>
+        <ProgressBar
+          value={doneCount}
+          max={steps.length}
+          segments={steps.length}
+          size="sm"
+          ariaLabel={t('roadmap.stepCompleted', { count: doneCount, total: steps.length })}
+        />
         <p className="text-xs text-ink-soft">
           {savedId || doneCount === 0 ? t('roadmap.progressHint') : t('roadmap.progressSaveHint')}
         </p>
@@ -243,6 +273,7 @@ export default function Roadmap({
           return (
             <Stop
               key={`${step.title}-${i}`}
+              id={`road-step-${i}`}
               side={side}
               x={positions[i + 1]}
               nextX={positions[i + 2]}
